@@ -17,28 +17,31 @@
     }
 }
 
-#navbarMainMenu ul li a{
-    border: 1px solid transparent;
-    color:inherit;
-    border-radius: 3px;
-    background-image: transparent;
+#navbarMainMenu {
+    text-align: center;
 }
 
-#navbarMainMenu ul li a:hover {
-    border: 1px solid #2aac40;
-    color: #0d4d79;
-    /*background-image: linear-gradient(#2aac40, #0d4d79);*/
-    border-radius: 3px;
-    transition: 0.3s
+#navbarMainMenu ul li {
+        a {
+        border: 1px solid transparent;
+        color:inherit;
+        border-radius: 3px;
+        background-image: transparent;
+
+        &:hover, &:active {
+            border: 1px solid #2aac40;
+            color: #0d4d79;
+            border-radius: 3px;
+            transition: 0.3s
+        }
+    }
 }
 
-
-#navbarMainMenu ul li a:active {
+#navbarMainMenu ul li.active a {
     border: 1px solid #2aac40;
     color: #0d4d79;
-    /*background-image: linear-gradient(#2aac40, #0d4d79);*/
     border-radius: 3px;
-    transition: 0.3s
+
 }
 
 @media (min-width: 766px) and (max-width: 995px) {
