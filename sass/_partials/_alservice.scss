@@ -1,0 +1,149 @@
+#al-services {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    padding: 20px 0;
+    display: grid;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+#al-services * {
+    z-index: 1;
+}
+
+#al-services .al-green-screen {
+    background: rgba($color: green, $alpha: 0.75);
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0px 10px 0px black;
+    z-index: 0;
+    top:0;
+}
+
+.al-services-title {
+    position: relative;
+    display: block;
+}
+
+.al-services-title {
+
+    h2 {
+        color: white;
+        line-height: 75px;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-family: 'Josefin-Sans', 'sans-serif';
+        font-size: 4rem;
+        margin: 0.25em 0px 1px;
+    }
+}
+
+#al-services h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+$hexagon-border: 5;
+$hexagon-size: 200;
+$hexagon-u: 1px;
+
+.al-hexagon-wrap {
+    display: inline-block;
+    position: relative;
+    width: $hexagon-size*$hexagon-u;
+    height: $hexagon-size*$hexagon-u;
+    background: #fff;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+.al-hexagon-img {
+    position: absolute;
+    background-size: cover;
+    top: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    left: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.al-services-content {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.al-service-card-wrap {
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+
+    &:hover {
+        transition: 0.3s;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1);
+
+
+        .al-hexagon-wrap {
+            animation-name: bright;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        .al-service-card {
+            transition: 0.3s;
+        }
+    }
+
+}
+
+@keyframes bright {
+    0% {
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+    }
+}
+
+.al-service-card {
+    margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .al-service-card {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 300px) {
+    $hexagon-border: 5;
+    $hexagon-size: 150;
+    $hexagon-u: 1px;
+
+    .al-hexagon-wrap {
+        width: $hexagon-size*$hexagon-u;
+        height: $hexagon-size*$hexagon-u;
+    }
+    .al-hexagon-img {
+    top: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    left: $hexagon-border * $hexagon-u; /* equal to border thickness */
+    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    }
+}

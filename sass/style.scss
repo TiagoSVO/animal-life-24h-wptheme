@@ -1,0 +1,28 @@
+/*
+Theme Name:  Animal Life 24h Theme
+Theme URI:  https://github.com/TiagoSVO/animal-life-24h-wptheme
+Author: Tiago da Silva Valeriano de Oliveira
+Author URI: https://tiagosvo.github.io/
+Description: Tema criado para a empresa de petshop Animal Life 24h.
+Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
+Text Domain:  animallife24h
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "compass";
+@import "compass/reset";
+
+@import "_partials/custom";
+@import "_partials/app";
+@import "_partials/nav_top";
+@import "_partials/main_menu";
+@import "_partials/main_carousel";
+@import "_partials/about";
+@import "_partials/alservice";
+@import "_partials/team";
+@import "_partials/gmap";
+@import "_partials/contact";
+@import "_partials/alpost";
+@import "_partials/footer_menu";
+@import "_partials/footer";

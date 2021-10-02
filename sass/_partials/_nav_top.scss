@@ -1,0 +1,22 @@
+.al-top-nav-bar {
+    height: 30px;
+    background-color: #ccc;
+    background-image: linear-gradient(#aaa, #ccc);
+    border-bottom: 1px solid #aaa ;
+    padding: 0;
+    color:#555;
+    font-size: 1.2vw;
+
+    span, a {
+        transition: 0.2s;
+        color:#555;
+        text-decoration: none;
+
+        &:hover {
+            color: #ddd;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+    }
+
+}

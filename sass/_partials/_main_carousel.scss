@@ -1,0 +1,38 @@
+#mainCarousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+#mainCarousel .carousel-inner {
+    height: 400px;
+}
+
+#mainCarousel .carousel-item {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#mainCarousel.carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media (max-width: 400px) {
+    #mainCarousel .carousel-inner {
+        height: 200px;
+    }
+
+    #mainCarousel .carousel-item {
+        height: 200px;
+    }
+
+    #mainCarousel.carousel .carousel-caption {
+        font-size: 0.8rem;
+    }
+}

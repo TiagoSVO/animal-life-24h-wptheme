@@ -1,0 +1,36 @@
+.al-team-person {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    position: relative;
+}
+
+.al-team-person-content {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    overflow-y: auto;
+    bottom:0;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.al-team-person:nth-child(odd) .al-team-person-content {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .al-team-person {
+        width: 100%;
+    }
+
+    .al-team-person-content {
+        height: 50%;
+        width: 100%;
+        bottom:0;
+        position: absolute;
+        overflow-y: auto;
+    }
+}

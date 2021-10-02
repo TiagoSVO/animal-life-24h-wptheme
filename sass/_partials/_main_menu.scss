@@ -1,0 +1,103 @@
+.al-main-menu {
+    min-height: 100px;
+    color: #777;
+    text-decoration: none;
+    background-color: #fff;
+    box-shadow: 0 0 1em #dfdfdf;
+
+}
+
+.al-main-menu .al-brand {
+    max-width: 10%;
+}
+
+.al-brand-title {
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+#navbarMainMenu ul li a{
+    border: 1px solid transparent;
+    color:inherit;
+    border-radius: 3px;
+    background-image: transparent;
+}
+
+#navbarMainMenu ul li a:hover {
+    border: 1px solid #2aac40;
+    color: #0d4d79;
+    /*background-image: linear-gradient(#2aac40, #0d4d79);*/
+    border-radius: 3px;
+    transition: 0.3s
+}
+
+
+#navbarMainMenu ul li a:active {
+    border: 1px solid #2aac40;
+    color: #0d4d79;
+    /*background-image: linear-gradient(#2aac40, #0d4d79);*/
+    border-radius: 3px;
+    transition: 0.3s
+}
+
+@media (min-width: 766px) and (max-width: 995px) {
+    .al-main-menu .al-brand {
+        max-width: 15%;
+    }
+
+    .al-brand-title {
+        display: none;
+    }
+
+    #navbarMainMenu {
+        font-size: 0.85em;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 765px), (max-width: 299px){
+    .al-main-menu .al-brand {
+        max-width: 15%;
+    }
+
+    .al-brand-title {
+        display: none;
+    }
+
+    #navbarMainMenu {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 575px) {
+
+    .al-main-menu {
+        min-height: 75px;
+    }
+
+    .al-brand-title {
+        h1 {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 365px) {
+    .al-main-menu .al-brand {
+        max-width: 15%;
+    }
+
+    .al-brand-title {
+        h1 {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .al-main-menu .al-brand {
+        max-width: 20%;
+    }
+}
