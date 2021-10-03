@@ -34,7 +34,7 @@
     </header>
     <nav class="al-main-menu navbar navbar-expand-sm sticky-top fixed-top navbar-light">
       <div class="container">
-        <a class="navbar-brand al-brand" href="#">
+        <a class="navbar-brand al-brand" href="<?php esc_url( $logo[0] )?>">
           <?php if ( function_exists( 'the_custom_logo' ) ) {
             $custom_logo_id = get_theme_mod( 'custom_logo' );
             $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );

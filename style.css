@@ -77,6 +77,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*font-family: 'Josefin Sans', sans-serif;*/
 /* line 5, sass/_partials/_custom.scss */
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+
+/* line 9, sass/_partials/_custom.scss */
 .al-main-title {
   position: relative;
   min-height: 100px;
@@ -87,20 +92,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   overflow: hidden;
   text-align: center;
 }
-/* line 15, sass/_partials/_custom.scss */
+/* line 19, sass/_partials/_custom.scss */
 .al-main-title h2 {
   font-family: 'Josefin Sans', 'sans-serif';
   font-size: 4rem;
   margin: 0.25em 0px 1px;
 }
 
-/* line 22, sass/_partials/_custom.scss */
+/* line 26, sass/_partials/_custom.scss */
 .al-main-title span {
   position: absolute;
   display: block;
 }
 
-/* line 27, sass/_partials/_custom.scss */
+/* line 31, sass/_partials/_custom.scss */
 .al-main-title span:nth-child(1) {
   top: 0;
   left: -100%;
@@ -109,13 +114,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: linear-gradient(90deg, rgba(0, 0, 0, 0), #ffffff);
 }
 
-/* line 36, sass/_partials/_custom.scss */
+/* line 40, sass/_partials/_custom.scss */
 .al-main-title:hover span:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-/* line 41, sass/_partials/_custom.scss */
+/* line 45, sass/_partials/_custom.scss */
 .al-main-title span:nth-child(2) {
   top: 98px;
   right: -100%;
@@ -124,7 +129,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: linear-gradient(90deg, #ffffff, rgba(0, 0, 0, 0));
 }
 
-/* line 50, sass/_partials/_custom.scss */
+/* line 54, sass/_partials/_custom.scss */
 .al-main-title:hover span:nth-child(2) {
   right: 100%;
   transition: 1s;
@@ -132,11 +137,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media (max-width: 765px) {
-  /* line 58, sass/_partials/_custom.scss */
+  /* line 62, sass/_partials/_custom.scss */
   .al-main-title h2 {
     font-size: 2rem;
   }
 }
+/* line 1, sass/_partials/_app.scss */
+#al-main {
+  min-height: 65vh;
+}
+
 /* line 1, sass/_partials/_nav_top.scss */
 .al-top-nav-bar {
   height: 30px;
@@ -184,14 +194,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 25, sass/_partials/_main_menu.scss */
+/* line 24, sass/_partials/_main_menu.scss */
+#navbarMainMenu ul li {
+  margin-left: 5px;
+}
+/* line 26, sass/_partials/_main_menu.scss */
+#navbarMainMenu ul li:nth-child(1) {
+  margin-left: 0;
+}
+/* line 29, sass/_partials/_main_menu.scss */
 #navbarMainMenu ul li a {
   border: 1px solid transparent;
   color: inherit;
   border-radius: 3px;
   background-image: transparent;
 }
-/* line 31, sass/_partials/_main_menu.scss */
+/* line 35, sass/_partials/_main_menu.scss */
 #navbarMainMenu ul li a:hover, #navbarMainMenu ul li a:active {
   border: 1px solid #2aac40;
   color: #0d4d79;
@@ -199,7 +217,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: 0.3s;
 }
 
-/* line 40, sass/_partials/_main_menu.scss */
+/* line 44, sass/_partials/_main_menu.scss */
 #navbarMainMenu ul li.active a {
   border: 1px solid #2aac40;
   color: #0d4d79;
@@ -207,61 +225,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @media (min-width: 766px) and (max-width: 995px) {
-  /* line 48, sass/_partials/_main_menu.scss */
+  /* line 51, sass/_partials/_main_menu.scss */
   .al-main-menu .al-brand {
     max-width: 15%;
   }
 
-  /* line 52, sass/_partials/_main_menu.scss */
+  /* line 55, sass/_partials/_main_menu.scss */
   .al-brand-title {
     display: none;
   }
 
-  /* line 56, sass/_partials/_main_menu.scss */
+  /* line 59, sass/_partials/_main_menu.scss */
   #navbarMainMenu {
     font-size: 0.85em;
   }
 }
 @media (min-width: 576px) and (max-width: 765px), (max-width: 299px) {
-  /* line 63, sass/_partials/_main_menu.scss */
+  /* line 66, sass/_partials/_main_menu.scss */
   .al-main-menu .al-brand {
     max-width: 15%;
   }
 
-  /* line 67, sass/_partials/_main_menu.scss */
+  /* line 70, sass/_partials/_main_menu.scss */
   .al-brand-title {
     display: none;
   }
 
-  /* line 71, sass/_partials/_main_menu.scss */
+  /* line 74, sass/_partials/_main_menu.scss */
   #navbarMainMenu {
     font-size: 0.8em;
   }
 }
 @media (max-width: 575px) {
-  /* line 79, sass/_partials/_main_menu.scss */
+  /* line 82, sass/_partials/_main_menu.scss */
   .al-main-menu {
     min-height: 75px;
   }
 
-  /* line 84, sass/_partials/_main_menu.scss */
+  /* line 87, sass/_partials/_main_menu.scss */
   .al-brand-title h1 {
     font-size: 1rem;
   }
 }
 @media (min-width: 300px) and (max-width: 365px) {
-  /* line 91, sass/_partials/_main_menu.scss */
+  /* line 94, sass/_partials/_main_menu.scss */
   .al-main-menu .al-brand {
     max-width: 15%;
   }
 
-  /* line 96, sass/_partials/_main_menu.scss */
+  /* line 99, sass/_partials/_main_menu.scss */
   .al-brand-title h1 {
     font-size: 0.7rem;
   }
 }
 @media (max-width: 300px) {
-  /* line 103, sass/_partials/_main_menu.scss */
+  /* line 106, sass/_partials/_main_menu.scss */
   .al-main-menu .al-brand {
     max-width: 20%;
   }

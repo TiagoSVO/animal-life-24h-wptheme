@@ -22,6 +22,10 @@
 }
 
 #navbarMainMenu ul li {
+    margin-left: 5px;
+    &:nth-child(1) {
+        margin-left: 0;
+    }
         a {
         border: 1px solid transparent;
         color:inherit;
@@ -41,7 +45,6 @@
     border: 1px solid #2aac40;
     color: #0d4d79;
     border-radius: 3px;
-
 }
 
 @media (min-width: 766px) and (max-width: 995px) {
