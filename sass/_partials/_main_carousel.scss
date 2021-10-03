@@ -1,38 +1,55 @@
-#mainCarousel .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
+#mainCarousel .carousel-indicators {
+    margin-bottom: 0 !important;
+
+    button {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 100% !important;
+    }
 }
 
 #mainCarousel .carousel-inner {
-    height: 400px;
+    height: 400px !important;
 }
 
 #mainCarousel .carousel-item {
-    width: 100%;
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    width: 100% !important;
+    height: 400px !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
 }
 
 #mainCarousel.carousel .carousel-caption {
-    background-color: rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    padding-left: 1em;
-    padding-right: 1em;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    bottom: 0 !important;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+
+    h5 {
+        margin-bottom: 1rem !important;
+        margin-top: 0 !important;
+        font-size: 2em !important;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        margin-top: 0;
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
     #mainCarousel .carousel-inner {
-        height: 200px;
+        height: 200px !important;
     }
 
     #mainCarousel .carousel-item {
-        height: 200px;
+        height: 200px !important;
     }
 
     #mainCarousel.carousel .carousel-caption {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 }

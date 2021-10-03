@@ -15,6 +15,13 @@ function wpcurso_config() {
     array("my_main_menu" => __('Main Menu', 'animallife24h'),
           "footer_menu" => __('Footer Menu', 'animallife24h'))
   );
+
+  $args = array(
+    'height' => 400,
+    'width'  => 1920
+  );
+  add_theme_support('custom-header', $args);
+  add_theme_support('post-thumbnails');
   add_theme_support('title-tag');
   add_theme_support('custom-logo', array('height' => 936, 'width' => 1080));
 }

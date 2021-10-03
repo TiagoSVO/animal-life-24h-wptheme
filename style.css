@@ -285,48 +285,65 @@ body {
   }
 }
 /* line 1, sass/_partials/_main_carousel.scss */
-#mainCarousel .carousel-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+#mainCarousel .carousel-indicators {
+  margin-bottom: 0 !important;
 }
-
-/* line 7, sass/_partials/_main_carousel.scss */
-#mainCarousel .carousel-inner {
-  height: 400px;
+/* line 4, sass/_partials/_main_carousel.scss */
+#mainCarousel .carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 100% !important;
 }
 
 /* line 11, sass/_partials/_main_carousel.scss */
-#mainCarousel .carousel-item {
-  width: 100%;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
+#mainCarousel .carousel-inner {
+  height: 400px !important;
 }
 
-/* line 19, sass/_partials/_main_carousel.scss */
+/* line 15, sass/_partials/_main_carousel.scss */
+#mainCarousel .carousel-item {
+  width: 100% !important;
+  height: 400px !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+}
+
+/* line 23, sass/_partials/_main_carousel.scss */
 #mainCarousel.carousel .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  bottom: 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  bottom: 0 !important;
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+/* line 29, sass/_partials/_main_carousel.scss */
+#mainCarousel.carousel .carousel-caption h5 {
+  margin-bottom: 1rem !important;
+  margin-top: 0 !important;
+  font-size: 2em !important;
+  font-weight: bold;
+}
+/* line 36, sass/_partials/_main_carousel.scss */
+#mainCarousel.carousel .carousel-caption p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  text-align: center;
 }
 
 @media (max-width: 400px) {
-  /* line 27, sass/_partials/_main_carousel.scss */
+  /* line 44, sass/_partials/_main_carousel.scss */
   #mainCarousel .carousel-inner {
-    height: 200px;
+    height: 200px !important;
   }
 
-  /* line 31, sass/_partials/_main_carousel.scss */
+  /* line 48, sass/_partials/_main_carousel.scss */
   #mainCarousel .carousel-item {
-    height: 200px;
+    height: 200px !important;
   }
 
-  /* line 35, sass/_partials/_main_carousel.scss */
+  /* line 52, sass/_partials/_main_carousel.scss */
   #mainCarousel.carousel .carousel-caption {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
   }
 }
 /* line 1, sass/_partials/_about.scss */
