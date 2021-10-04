@@ -1,18 +1,27 @@
 <section id="al-footer-menu">
-    <div className="al-footer-pegadas-left">
+    <div class="al-footer-pegadas-left">
 
     </div>
-    <div className="al-footer-pegadas-right">
-        <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
-        <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
-        <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
-        <span className="al-footer-pegada" style={{backgroundImage: 'url("'+pegada+'")'}}></span>
+    <div class="al-footer-pegadas-right">
+        <span class="al-footer-pegada" style="background:url('<?php echo get_template_directory_uri() . '/images/pegada.svg';?>')"></span>
+        <span class="al-footer-pegada" style="background:url('<?php echo get_template_directory_uri() . '/images/pegada.svg';?>')"></span>
+        <span class="al-footer-pegada" style="background:url('<?php echo get_template_directory_uri() . '/images/pegada.svg';?>')"></span>
+        <span class="al-footer-pegada" style="background:url('<?php echo get_template_directory_uri() . '/images/pegada.svg';?>')"></span>
     </div>
-    <div className="container">
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-            <div className="col d-block">
-                <div className="clearfix al-footer-menu-inner-col">
-                    <img src={logo} className="al-footer-menu-logo"/>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+            <div class="col d-block">
+                <div class="clearfix al-footer-menu-inner-col">
+                    <?php if ( function_exists( 'the_custom_logo' ) ) {
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+
+                        if ( has_custom_logo() ) {
+                          echo '<img class="al-footer-menu-logo" src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
+                        } else {
+                            echo '<h1>' . get_bloginfo('name') . '</h1>';
+                        }
+                    }?>
                     <p> A nossa clínica dispõe de
                         uma excelente estrutura
                         para cuidar do seu melhor
@@ -23,34 +32,32 @@
                         carinho e profissionalismo.
                     </p>
                 </div>
-                <div className="clearfix al-footer-menu-inner-col-divider ">
+                <div class="clearfix al-footer-menu-inner-col-divider ">
                     <hr/>
                 </div>
-                <div className="al-footer-menu-inner-col">
+                <nav class="al-footer-menu-inner-col">
                     <h5>Serviços</h5>
                     <ul>
                         <li><a href="#">Clínica</a></li>
                         <li><a href="#">Banho e Tosa</a></li>
                         <li><a href="#">Produtos & Medicações</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-            <div className="col">
-                <div className="al-footer-menu-inner-col">
+            <div class="col">
+                <nav class="al-footer-menu-inner-col">
                     <h5>Navegação</h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#al-about">Quem Somos</a></li>
-                        <li><a href="#al-service">Serviços</a></li>
-                        <li><a href="#al-team">Equipe</a></li>
-                        <li><a href="#al-news">Notícias</a></li>
-                        <li><a href="#">Clínica</a></li>
-                        <li><a href="#al-contact">Contato</a></li>
-                    </ul>
-                </div>
+                    <?php wp_nav_menu(array(
+                        'theme_location' => 'footer_menu',
+                        'container' => false,
+                        'container_class' => '',
+                        'container_id' => '',
+                        'items_wrap' => '<ul>%3$s</ul>')
+                      );?>
+                </nav>
             </div>
-            <div className="col">
-                <div className="clearfix al-footer-menu-inner-col">
+            <div class="col">
+                <div class="clearfix al-footer-menu-inner-col">
                     <h5>Contato</h5>
                     <p> Possuímos serviço de atendimento de
                         emergência 24Hs e se você não puder
@@ -66,31 +73,35 @@
                     <p>Segunda-Feira a Domingo 24h</p>
                     <ul>
                         <li>
-                            <a target='_blank' href="https://wa.me/5561996853227">
-                                <i className="bi bi-telephone-fill" role="img" aria-label="Telefone" ></i> (61) 3542-4076 | (61) 99685-3227
+                            <a target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>">
+                                <i class="bi bi-whatsapp" role="img" aria-label="Telefone" ></i> (61) 99685-3227
+                            </a>
+                            |
+                            <a target='_blank' href="tel: <?php echo get_theme_mod('set_phone'); ?>">
+                                <i class="bi bi-telephone-fill" role="img" aria-label="Telefone" ></i> (61) 3542-4076
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <i className="bi bi-envelope-fill" role="img" aria-label="Email"></i> animallifecontato@gmail.com
+                            <a target="_blank" href="mailto: <?php echo get_theme_mod('set_email'); ?>">
+                                <i class="bi bi-envelope-fill" role="img" aria-label="Email"></i> <?php echo get_theme_mod('set_email'); ?>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div className="clearfix al-footer-menu-inner-col-divider ">
+                <div class="clearfix al-footer-menu-inner-col-divider ">
                     <hr/>
                 </div>
-                <div className="al-footer-menu-inner-col">
+                <div class="al-footer-menu-inner-col">
                     <h5>MÍDIAS SOCIAIS</h5>
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/animallife24h/">
-                                <i className="bi bi-instagram" role="img" aria-label="Instagram"></i> Instagram
+                            <a target="_blank" href="<?php echo get_theme_mod('set_insta'); ?>">
+                                <i class="bi bi-instagram" role="img" aria-label="Instagram"></i> Instagram
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCgDi63POKCY6MzlytsfbfHw">
-                                <i className="bi bi-youtube" role="img" aria-label="Youtube"></i> Youtube
+                            <a target="_blank" href="<?php echo get_theme_mod('set_youtube'); ?>">
+                                <i class="bi bi-youtube" role="img" aria-label="Youtube"></i> Youtube
                             </a>
                         </li>
                     </ul>

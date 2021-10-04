@@ -1093,154 +1093,156 @@ body {
 
 /* line 1, sass/_partials/_footer_menu.scss */
 #al-footer-menu {
-  min-height: 70vh;
-  width: 100%;
-  background-color: #012338;
-  padding: 20px 0;
-  color: #fff;
-  position: relative;
+  min-height: 70vh !important;
+  width: 100% !important;
+  background-color: #012338 !important;
+  padding: 20px 0 !important;
+  color: #fff !important;
+  position: relative !important;
 }
 /* line 9, sass/_partials/_footer_menu.scss */
 #al-footer-menu .container {
-  position: relative;
-  z-index: 1;
+  position: relative !important;
+  z-index: 1 !important;
 }
 /* line 14, sass/_partials/_footer_menu.scss */
 #al-footer-menu [class^="al-footer-pegadas"] {
-  height: 100%;
-  width: 10%;
-  position: absolute;
-  top: 0;
-  z-index: 0;
-  opacity: 0.75;
-  filter: brightness(0);
+  height: 100% !important;
+  width: 10% !important;
+  position: absolute !important;
+  top: 0 !important;
+  z-index: 0 !important;
+  opacity: 0.75 !important;
+  filter: brightness(0) !important;
   overflow: hidden;
 }
 /* line 24, sass/_partials/_footer_menu.scss */
 #al-footer-menu [class^="al-footer-pegadas"] .al-footer-pegada {
-  position: absolute;
-  background-size: 90%;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: absolute !important;
+  background-size: 90% !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
 }
 /* line 32, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-left {
-  left: 0;
+  left: 0 !important;
 }
 /* line 36, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-right {
-  right: 0;
-  width: 50%;
+  right: 0 !important;
+  width: 50% !important;
 }
 /* line 40, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-right .al-footer-pegada {
-  width: 100px;
-  height: 100px;
+  width: 100px !important;
+  height: 100px !important;
 }
 /* line 44, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(1) {
-  bottom: 0;
-  right: 100px;
+  bottom: 0 !important;
+  right: 100px !important;
 }
 /* line 49, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(2) {
-  bottom: 100px;
-  right: 0px;
+  bottom: 100px !important;
+  right: 0px !important;
 }
 /* line 54, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(3) {
-  bottom: 225px;
-  right: 75px;
+  bottom: 225px !important;
+  right: 75px !important;
 }
 /* line 59, sass/_partials/_footer_menu.scss */
 #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(4) {
-  bottom: 325px;
-  right: -50px;
+  bottom: 325px !important;
+  right: -50px !important;
 }
 /* line 66, sass/_partials/_footer_menu.scss */
 #al-footer-menu a {
-  color: #fff;
-  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
-  transition: 0.3s text-shadow;
-  text-decoration: none;
+  color: #fff !important;
+  text-shadow: 0px 0px 0px rgba(255, 255, 255, 0) !important;
+  transition: 0.3s text-shadow !important;
+  text-decoration: none !important;
 }
 /* line 72, sass/_partials/_footer_menu.scss */
 #al-footer-menu a:hover {
-  text-shadow: 0px 0px 5px white;
-  transition: 0.3s text-shadow;
+  text-shadow: 0px 0px 5px white !important;
+  transition: 0.3s text-shadow !important;
 }
 
 /* line 79, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col {
-  text-align: justify;
-  padding: 20px;
+  text-align: justify !important;
+  padding: 20px !important;
 }
 /* line 83, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col .al-footer-menu-inner-col-divider {
-  margin: 10px;
-  display: block;
-  position: relative;
-  clear: both;
+  margin: 10px !important;
+  display: block !important;
+  position: relative !important;
+  clear: both !important;
 }
 /* line 90, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col .al-footer-menu-logo {
-  float: left;
-  width: 25%;
-  margin: 0 15px 5px 0;
+  float: left !important;
+  width: 25% !important;
+  margin: 0 15px 5px 0 !important;
 }
 /* line 96, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col h5 {
-  margin-bottom: 15px;
+  margin-bottom: 15px !important;
+  text-transform: uppercase;
+  font-weight: bold;
 }
-/* line 100, sass/_partials/_footer_menu.scss */
+/* line 102, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col ul {
-  list-style: none;
-  padding-left: 0;
+  list-style: none !important;
+  padding-left: 0 !important;
 }
-/* line 104, sass/_partials/_footer_menu.scss */
+/* line 106, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col ul li {
-  text-indent: none;
-  margin: 15px 0;
+  text-indent: none !important;
+  margin: 15px 0 !important;
 }
-/* line 108, sass/_partials/_footer_menu.scss */
+/* line 110, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col ul li a {
-  text-decoration: none;
-  color: #fff;
+  text-decoration: none !important;
+  color: #fff !important;
 }
-/* line 115, sass/_partials/_footer_menu.scss */
+/* line 117, sass/_partials/_footer_menu.scss */
 .al-footer-menu-inner-col i {
-  margin-right: 10px;
+  margin-right: 10px !important;
 }
 
 @media (max-width: 487px) {
-  /* line 123, sass/_partials/_footer_menu.scss */
+  /* line 125, sass/_partials/_footer_menu.scss */
   #al-footer-menu .al-footer-pegadas-right {
-    width: 100%;
+    width: 100% !important;
   }
-  /* line 126, sass/_partials/_footer_menu.scss */
+  /* line 128, sass/_partials/_footer_menu.scss */
   #al-footer-menu .al-footer-pegadas-right .al-footer-pegada {
-    width: 100px;
-    height: 100px;
+    width: 100px !important;
+    height: 100px !important;
   }
-  /* line 130, sass/_partials/_footer_menu.scss */
+  /* line 132, sass/_partials/_footer_menu.scss */
   #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(1) {
-    bottom: 0;
-    right: 100px;
+    bottom: 0 !important;
+    right: 100px !important;
   }
-  /* line 135, sass/_partials/_footer_menu.scss */
+  /* line 137, sass/_partials/_footer_menu.scss */
   #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(2) {
-    bottom: 100px;
-    right: 0px;
+    bottom: 100px !important;
+    right: 0px !important;
   }
-  /* line 140, sass/_partials/_footer_menu.scss */
+  /* line 142, sass/_partials/_footer_menu.scss */
   #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(3) {
-    bottom: 225px;
-    right: 75px;
+    bottom: 225px !important;
+    right: 75px !important;
   }
-  /* line 145, sass/_partials/_footer_menu.scss */
+  /* line 147, sass/_partials/_footer_menu.scss */
   #al-footer-menu .al-footer-pegadas-right .al-footer-pegada:nth-child(4) {
-    bottom: 325px;
-    right: -50px;
+    bottom: 325px !important;
+    right: -50px !important;
   }
 }
 /* line 1, sass/_partials/_footer.scss */

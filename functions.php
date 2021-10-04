@@ -1,5 +1,8 @@
 <?php
 
+// Requerendo o arquivo do Customizer
+require get_template_directory() . '/inc/customizer.php';
+
 // Carregando nossos scripts e folhas
 function load_scripts(){
   wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '4.0.0', true);
@@ -10,7 +13,7 @@ function load_scripts(){
 
 add_action('wp_enqueue_scripts', 'load_scripts');
 
-function wpcurso_config() {
+function animallife24h_config() {
   register_nav_menus(
     array("my_main_menu" => __('Main Menu', 'animallife24h'),
           "footer_menu" => __('Footer Menu', 'animallife24h'))
@@ -25,7 +28,7 @@ function wpcurso_config() {
   add_theme_support('title-tag');
   add_theme_support('custom-logo', array('height' => 936, 'width' => 1080));
 }
-add_action('after_setup_theme', 'wpcurso_config', 0);
+add_action('after_setup_theme', 'animallife24h_config', 0);
 
 //Adiciona classe às tags <li> do my_main_menu
 function add_class_li_main_menu( $classes, $item, $args ) {
