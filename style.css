@@ -359,9 +359,9 @@ body {
 .al-main-about-pegada {
   width: 100px;
   height: 100px;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 90px;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: 90px !important;
   position: absolute;
   z-index: -1;
   opacity: 1;
@@ -429,42 +429,44 @@ body {
 .al-main-about-content p {
   text-indent: 2rem;
   text-align: justify;
-  font-size: 1.25rem;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  line-height: 1.2em;
 }
 
 @media (max-width: 600px) {
-  /* line 79, sass/_partials/_about.scss */
+  /* line 81, sass/_partials/_about.scss */
   .al-main-about-pegada {
     width: 75px;
     height: 75px;
     background-size: 65px;
   }
 
-  /* line 85, sass/_partials/_about.scss */
+  /* line 87, sass/_partials/_about.scss */
   .al-main-about-pegadas .al-main-about-pegada:nth-child(1) {
     bottom: 0%;
     right: 15%;
   }
 
-  /* line 90, sass/_partials/_about.scss */
+  /* line 92, sass/_partials/_about.scss */
   .al-main-about-pegadas .al-main-about-pegada:nth-child(2) {
     bottom: 15%;
     right: 0%;
   }
 
-  /* line 95, sass/_partials/_about.scss */
+  /* line 97, sass/_partials/_about.scss */
   .al-main-about-pegadas .al-main-about-pegada:nth-child(3) {
     bottom: 40%;
     right: 10%;
   }
 
-  /* line 100, sass/_partials/_about.scss */
+  /* line 102, sass/_partials/_about.scss */
   .al-main-about-pegadas .al-main-about-pegada:nth-child(4) {
     bottom: 60%;
     right: 0;
   }
 
-  /* line 105, sass/_partials/_about.scss */
+  /* line 107, sass/_partials/_about.scss */
   .al-main-about-circles .al-main-about-circle:nth-child(1) {
     width: 175px;
     height: 175px;
@@ -478,7 +480,7 @@ body {
     opacity: 0.5;
   }
 
-  /* line 118, sass/_partials/_about.scss */
+  /* line 120, sass/_partials/_about.scss */
   .al-main-about-circles .al-main-about-circle:nth-child(2) {
     width: 125px;
     height: 125px;

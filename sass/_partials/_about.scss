@@ -9,9 +9,9 @@
 .al-main-about-pegada {
     width: 100px;
     height: 100px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: 90px;
+    background-color: transparent !important;
+    background-repeat: no-repeat !important;
+    background-size: 90px !important;
     position: absolute;
     z-index: -1;
     opacity: 1;
@@ -70,7 +70,9 @@
 .al-main-about-content p {
     text-indent: 2rem;
     text-align: justify;
-    font-size: 1.25rem;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    line-height: 1.2em;
 }
 
 
