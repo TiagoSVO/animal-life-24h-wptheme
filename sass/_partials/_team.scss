@@ -1,36 +1,67 @@
 .al-team-person {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    width: 50%;
-    position: relative;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 50% !important;
+    position: relative !important;
 }
 
 .al-team-person-content {
-    height: 100%;
-    width: 50%;
-    position: absolute;
-    overflow-y: auto;
-    bottom:0;
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    color: #fff;
-    padding: 1.5rem;
+    height: 100% !important;
+    width: 50% !important;
+    position: absolute !important;
+    overflow-y: auto !important;
+    bottom:0 !important;
+    background-color: rgba($color: #000000, $alpha: 0.5) !important;
+    color: #fff !important;
+    padding: 1.5rem !important;
+    text-align: justify;
+
+
+    h3 {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    p {
+        text-indent: 2rem;
+        font-size: 1.2em;
+        line-height: 1.2em;
+        margin-bottom: 1em;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    .al-team-person-content-linkwrap {
+        text-align: right;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-shadow: 0 0 10px #fff;
+        }
+    }
+
 }
 
 .al-team-person:nth-child(odd) .al-team-person-content {
-    right: 0;
+    right: 0 !important;
 }
 
 @media (max-width: 768px) {
     .al-team-person {
-        width: 100%;
+        width: 100% !important;
     }
 
     .al-team-person-content {
-        height: 50%;
-        width: 100%;
-        bottom:0;
-        position: absolute;
-        overflow-y: auto;
+        height: 50% !important;
+        width: 100% !important;
+        bottom:0 !important;
+        position: absolute !important;
+        overflow-y: auto !important;
     }
 }

@@ -27,6 +27,7 @@ function animallife24h_config() {
   add_theme_support('post-thumbnails');
   add_theme_support('title-tag');
   add_theme_support('custom-logo', array('height' => 936, 'width' => 1080));
+  add_post_type_support('page', 'excerpt');
 }
 add_action('after_setup_theme', 'animallife24h_config', 0);
 
