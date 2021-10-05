@@ -1,54 +1,59 @@
 #al-services {
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    position: relative;
-    padding: 20px 0;
-    display: grid;
+    min-height: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff !important;
+    position: relative !important;
+    padding: 20px 0 !important;
+    display: grid !important;
 
     a {
-        color: #fff;
-        text-decoration: none;
+        color: #fff !important;
+        text-decoration: none !important;
     }
 }
 
 #al-services * {
-    z-index: 1;
+    z-index: 1 !important;
 }
 
 #al-services .al-green-screen {
-    background: rgba($color: green, $alpha: 0.75);
-    position: absolute;
-    float: left;
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0px 10px 0px black;
-    z-index: 0;
-    top:0;
+    background: rgba($color: green, $alpha: 0.75) !important;
+    position: absolute !important;
+    float: left !important;
+    width: 100% !important;
+    height: 100% !important;
+    box-shadow: inset 0 0px 10px 0px black !important;
+    z-index: 0 !important;
+    top:0 !important;
 }
 
 .al-services-title {
-    position: relative;
-    display: block;
+    position: relative !important;
+    display: block !important;
 }
 
 .al-services-title {
 
     h2 {
-        color: white;
-        line-height: 75px;
-        font-size: 3em;
-        text-transform: uppercase;
-        font-family: 'Josefin-Sans', 'sans-serif';
-        font-size: 4rem;
-        margin: 0.25em 0px 1px;
+        color: white !important;
+        line-height: 75px !important;
+        text-transform: uppercase !important;
+        font-family: 'Josefin Sans', 'sans-serif' !important;
+        font-size: 4rem !important;
+        font-weight: bold;
+        margin: 0.25em 0px 1px !important;
     }
 }
 
 #al-services h3 {
-    text-align: center;
-    text-transform: uppercase;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    font-size: 1.75rem;
+    margin-top: .5em;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 $hexagon-border: 5;
@@ -56,49 +61,55 @@ $hexagon-size: 200;
 $hexagon-u: 1px;
 
 .al-hexagon-wrap {
-    display: inline-block;
-    position: relative;
-    width: $hexagon-size*$hexagon-u;
-    height: $hexagon-size*$hexagon-u;
-    background: #fff;
-    box-sizing: border-box;
-    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    display: inline-block !important;
+    position: relative !important;
+    width: $hexagon-size*$hexagon-u !important;
+    height: $hexagon-size*$hexagon-u !important;
+    background: #fff !important;
+    box-sizing: border-box !important;
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
 }
 .al-hexagon-img {
-    position: absolute;
-    background-size: cover;
-    top: $hexagon-border * $hexagon-u; /* equal to border thickness */
-    left: $hexagon-border * $hexagon-u; /* equal to border thickness */
-    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
-    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
-    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: absolute !important;
+    background-size: cover !important;
+    top: $hexagon-border * $hexagon-u !important; /* equal to border thickness */
+    left: $hexagon-border * $hexagon-u !important; /* equal to border thickness */
+    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2) !important; /* container height - (border thickness * 2) */
+    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2) !important; /* container height - (border thickness * 2) */
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
 }
 
 .al-services-content {
-    padding: 0 10px;
-    text-align: justify;
+    padding: 0 10px !important;
+    text-align: justify !important;
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        line-height: 1.5em;
+    }
 }
 
 .al-service-card-wrap {
-    transition: 0.3s;
-    box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+    transition: 0.3s !important;
+    box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0) !important;
 
     &:hover {
-        transition: 0.3s;
-        cursor: pointer;
-        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1);
+        transition: 0.3s !important;
+        cursor: pointer !important;
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1) !important;
 
 
         .al-hexagon-wrap {
-            animation-name: bright;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
+            animation-name: bright !important;
+            animation-duration: 3s !important;
+            animation-iteration-count: infinite !important;
         }
 
         .al-service-card {
-            transition: 0.3s;
+            transition: 0.3s !important;
         }
     }
 
@@ -106,28 +117,28 @@ $hexagon-u: 1px;
 
 @keyframes bright {
     0% {
-        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0) !important;
     }
     50% {
-        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1);
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 1) !important;
     }
     100% {
-        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0);
+        box-shadow: 0 0 15px rgba($color: #fff, $alpha: 0) !important;
     }
 }
 
 .al-service-card {
-    margin: 20px 0;
+    margin: 20px 0 !important;
 }
 
 @media (max-width: 767px) {
     h2 {
-        font-size: 2rem;
+        font-size: 2rem !important;
     }
 
     .al-service-card {
-        margin-top: 20px;
-        margin-bottom: 40px;
+        margin-top: 20px !important;
+        margin-bottom: 40px !important;
     }
 }
 
@@ -137,13 +148,13 @@ $hexagon-u: 1px;
     $hexagon-u: 1px;
 
     .al-hexagon-wrap {
-        width: $hexagon-size*$hexagon-u;
-        height: $hexagon-size*$hexagon-u;
+        width: $hexagon-size*$hexagon-u !important;
+        height: $hexagon-size*$hexagon-u !important;
     }
     .al-hexagon-img {
-    top: $hexagon-border * $hexagon-u; /* equal to border thickness */
-    left: $hexagon-border * $hexagon-u; /* equal to border thickness */
-    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
-    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2); /* container height - (border thickness * 2) */
+    top: $hexagon-border * $hexagon-u !important; /* equal to border thickness */
+    left: $hexagon-border * $hexagon-u !important; /* equal to border thickness */
+    width: $hexagon-size - ($hexagon-border * $hexagon-u * 2) !important; /* container height - (border thickness * 2) */
+    height: $hexagon-size - ($hexagon-border * $hexagon-u * 2) !important; /* container height - (border thickness * 2) */
     }
 }

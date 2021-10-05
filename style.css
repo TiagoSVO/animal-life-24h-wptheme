@@ -496,160 +496,171 @@ body {
 }
 /* line 1, sass/_partials/_alservice.scss */
 #al-services {
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  position: relative;
-  padding: 20px 0;
-  display: grid;
+  min-height: 100vh !important;
+  background-size: cover !important;
+  background-position: center !important;
+  color: #fff !important;
+  position: relative !important;
+  padding: 20px 0 !important;
+  display: grid !important;
 }
 /* line 10, sass/_partials/_alservice.scss */
 #al-services a {
-  color: #fff;
-  text-decoration: none;
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 /* line 16, sass/_partials/_alservice.scss */
 #al-services * {
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 /* line 20, sass/_partials/_alservice.scss */
 #al-services .al-green-screen {
-  background: rgba(0, 128, 0, 0.75);
-  position: absolute;
-  float: left;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0 0px 10px 0px black;
-  z-index: 0;
-  top: 0;
+  background: rgba(0, 128, 0, 0.75) !important;
+  position: absolute !important;
+  float: left !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: inset 0 0px 10px 0px black !important;
+  z-index: 0 !important;
+  top: 0 !important;
 }
 
 /* line 31, sass/_partials/_alservice.scss */
 .al-services-title {
-  position: relative;
-  display: block;
+  position: relative !important;
+  display: block !important;
 }
 
 /* line 38, sass/_partials/_alservice.scss */
 .al-services-title h2 {
-  color: white;
-  line-height: 75px;
-  font-size: 3em;
-  text-transform: uppercase;
-  font-family: 'Josefin-Sans', 'sans-serif';
-  font-size: 4rem;
-  margin: 0.25em 0px 1px;
+  color: white !important;
+  line-height: 75px !important;
+  text-transform: uppercase !important;
+  font-family: 'Josefin Sans', 'sans-serif' !important;
+  font-size: 4rem !important;
+  font-weight: bold;
+  margin: 0.25em 0px 1px !important;
 }
 
 /* line 49, sass/_partials/_alservice.scss */
 #al-services h3 {
-  text-align: center;
-  text-transform: uppercase;
+  text-align: center !important;
+  text-transform: uppercase !important;
+  font-size: 1.75rem;
+  margin-top: .5em;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-/* line 58, sass/_partials/_alservice.scss */
+/* line 63, sass/_partials/_alservice.scss */
 .al-hexagon-wrap {
-  display: inline-block;
-  position: relative;
-  width: 200px;
-  height: 200px;
-  background: #fff;
-  box-sizing: border-box;
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: inline-block !important;
+  position: relative !important;
+  width: 200px !important;
+  height: 200px !important;
+  background: #fff !important;
+  box-sizing: border-box !important;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
 }
 
-/* line 68, sass/_partials/_alservice.scss */
+/* line 73, sass/_partials/_alservice.scss */
 .al-hexagon-img {
-  position: absolute;
-  background-size: cover;
-  top: 5px;
+  position: absolute !important;
+  background-size: cover !important;
+  top: 5px !important;
   /* equal to border thickness */
-  left: 5px;
+  left: 5px !important;
   /* equal to border thickness */
-  width: 190px;
+  width: 190px !important;
   /* container height - (border thickness * 2) */
-  height: 190px;
+  height: 190px !important;
   /* container height - (border thickness * 2) */
-  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-}
-
-/* line 79, sass/_partials/_alservice.scss */
-.al-services-content {
-  padding: 0 10px;
-  text-align: justify;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%) !important;
 }
 
 /* line 84, sass/_partials/_alservice.scss */
-.al-service-card-wrap {
-  transition: 0.3s;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+.al-services-content {
+  padding: 0 10px !important;
+  text-align: justify !important;
 }
 /* line 88, sass/_partials/_alservice.scss */
+.al-services-content p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.5em;
+}
+
+/* line 95, sass/_partials/_alservice.scss */
+.al-service-card-wrap {
+  transition: 0.3s !important;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0) !important;
+}
+/* line 99, sass/_partials/_alservice.scss */
 .al-service-card-wrap:hover {
-  transition: 0.3s;
-  cursor: pointer;
-  box-shadow: 0 0 15px white;
+  transition: 0.3s !important;
+  cursor: pointer !important;
+  box-shadow: 0 0 15px white !important;
 }
-/* line 94, sass/_partials/_alservice.scss */
+/* line 105, sass/_partials/_alservice.scss */
 .al-service-card-wrap:hover .al-hexagon-wrap {
-  animation-name: bright;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  animation-name: bright !important;
+  animation-duration: 3s !important;
+  animation-iteration-count: infinite !important;
 }
-/* line 100, sass/_partials/_alservice.scss */
+/* line 111, sass/_partials/_alservice.scss */
 .al-service-card-wrap:hover .al-service-card {
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 
 @keyframes bright {
   0% {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0) !important;
   }
   50% {
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 15px white !important;
   }
   100% {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0) !important;
   }
 }
-/* line 119, sass/_partials/_alservice.scss */
+/* line 130, sass/_partials/_alservice.scss */
 .al-service-card {
-  margin: 20px 0;
+  margin: 20px 0 !important;
 }
 
 @media (max-width: 767px) {
-  /* line 124, sass/_partials/_alservice.scss */
+  /* line 135, sass/_partials/_alservice.scss */
   h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
-  /* line 128, sass/_partials/_alservice.scss */
+  /* line 139, sass/_partials/_alservice.scss */
   .al-service-card {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 20px !important;
+    margin-bottom: 40px !important;
   }
 }
 @media (max-width: 300px) {
-  /* line 139, sass/_partials/_alservice.scss */
+  /* line 150, sass/_partials/_alservice.scss */
   .al-hexagon-wrap {
-    width: 150px;
-    height: 150px;
+    width: 150px !important;
+    height: 150px !important;
   }
 
-  /* line 143, sass/_partials/_alservice.scss */
+  /* line 154, sass/_partials/_alservice.scss */
   .al-hexagon-img {
-    top: 5px;
+    top: 5px !important;
     /* equal to border thickness */
-    left: 5px;
+    left: 5px !important;
     /* equal to border thickness */
-    width: 140px;
+    width: 140px !important;
     /* container height - (border thickness * 2) */
-    height: 140px;
+    height: 140px !important;
     /* container height - (border thickness * 2) */
   }
 }

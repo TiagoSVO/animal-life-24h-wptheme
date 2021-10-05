@@ -56,3 +56,18 @@ function add_attrs_link_main_menu( $atts, $item, $args ) {
     return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'add_attrs_link_main_menu', 10, 3 );
+
+function animallife24h_sidebars(){
+  register_sidebar(
+    array(
+      'name' => __('Services', 'animallife24h'),
+      'id' => 'services',
+      'description' => __('Services Area.', 'animallife24h'),
+      'before_widget' => '<div class="widget-wrapper">',
+      'after_widget' => '</div>',
+      'before_title' => '<h2 class="widget-title">',
+      'after_title' => '</h2>',
+    )
+  );
+}
+add_action('widgets_init', 'animallife24h_sidebars');
