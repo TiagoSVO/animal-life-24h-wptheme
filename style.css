@@ -97,15 +97,16 @@ body {
   font-family: 'Josefin Sans', 'sans-serif';
   font-size: 4rem;
   margin: 0.25em 0px 1px;
+  font-weight: bold;
 }
 
-/* line 26, sass/_partials/_custom.scss */
+/* line 27, sass/_partials/_custom.scss */
 .al-main-title span {
   position: absolute;
   display: block;
 }
 
-/* line 31, sass/_partials/_custom.scss */
+/* line 32, sass/_partials/_custom.scss */
 .al-main-title span:nth-child(1) {
   top: 0;
   left: -100%;
@@ -114,13 +115,13 @@ body {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0), #ffffff);
 }
 
-/* line 40, sass/_partials/_custom.scss */
+/* line 41, sass/_partials/_custom.scss */
 .al-main-title:hover span:nth-child(1) {
   left: 100%;
   transition: 1s;
 }
 
-/* line 45, sass/_partials/_custom.scss */
+/* line 46, sass/_partials/_custom.scss */
 .al-main-title span:nth-child(2) {
   top: 98px;
   right: -100%;
@@ -129,7 +130,7 @@ body {
   background: linear-gradient(90deg, #ffffff, rgba(0, 0, 0, 0));
 }
 
-/* line 54, sass/_partials/_custom.scss */
+/* line 55, sass/_partials/_custom.scss */
 .al-main-title:hover span:nth-child(2) {
   right: 100%;
   transition: 1s;
@@ -137,7 +138,7 @@ body {
 }
 
 @media (max-width: 765px) {
-  /* line 62, sass/_partials/_custom.scss */
+  /* line 63, sass/_partials/_custom.scss */
   .al-main-title h2 {
     font-size: 2rem;
   }
