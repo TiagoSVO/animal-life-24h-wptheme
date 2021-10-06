@@ -9,10 +9,14 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <?php
+                $cat_main_carousel = get_category_by_slug('main-carousel');
+                $cat_sem_categoria = get_category_by_slug('sem-categoria');
                 $args = array(
-                    'category_name__not_in' => 'main-carousel,sem-categoria',
+                    'cat' => ''.(-1*$cat_main_carousel->term_id).','.(-1*$cat_sem_categoria->term_id).'',
                     'post_type' => 'post',
-                    'posts_per_page' => 3
+                    'orderby' => 'date',
+                    'order'   => 'DESC',
+                    'posts_per_page' => 10
                 );
                 $the_query = new WP_Query( $args );
 
@@ -52,7 +56,7 @@
                             </small> <br/>
                             <small class="al-posts-card-footer-tags">
                                 <strong>Tags:</strong>
-                                <?php the_tags(', '); ?>
+                                <?php the_tags(' | '); ?>
                             </small>
                         </div>
                     </div>
