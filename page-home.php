@@ -5,6 +5,7 @@
     <?php get_template_part('template-parts/content', 'about') ?>
     <?php get_template_part('template-parts/content', 'services') ?>
     <?php get_template_part('template-parts/content', 'team') ?>
+    <?php get_template_part('template-parts/content', 'news') ?>
     <?php get_template_part('template-parts/content', 'gmap') ?>
   </article>
 </main>

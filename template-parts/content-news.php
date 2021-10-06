@@ -1,72 +1,74 @@
 <section id="al-posts">
-    <div className="al-posts-title text-center">
+    <div class="al-posts-title text-center">
         <h2>Últimos Posts</h2>
     </div>
-    <div className="al-posts-divider">
+    <div class="al-posts-divider">
         <span></span>
         <span></span>
     </div>
-    <div className="container">
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-            {this.state.dataPosts.map((post) => {
-                return(
-                    <div className="col">
-                        <div className="card h-100 al-posts-card">
-                            <div className="al-posts-card-image-wrap">
-                                <div className="al-posts-card-data-wrap">
-                                    <div className="al-posts-card-data-day">
-                                        {post.date.day}
-                                    </div>
-                                    <div className="al-posts-card-data-mounth">
-                                        {post.date.mounth}
-                                    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <?php
+                $args = array(
+                    'category_name__not_in' => 'main-carousel,sem-categoria',
+                    'post_type' => 'post',
+                    'posts_per_page' => 3
+                );
+                $the_query = new WP_Query( $args );
+
+                if($the_query->have_posts()):
+                    while($the_query->have_posts()): $the_query->the_post();
+
+            ?>
+                <div class="col">
+                    <div class="card h-100 al-posts-card">
+                        <div class="al-posts-card-image-wrap">
+                            <div class="al-posts-card-data-wrap">
+                                <div class="al-posts-card-data-day">
+                                     <?php echo get_the_date('d')?>
                                 </div>
-                                <div style={{backgroundImage: `url(${post.image})`}} className="card-img-top" alt="..." />
-                            </div>
-                            <div className="card-body">
-                                <h5 className="card-title">{post.title}</h5>
-                                <div className="al-posts-divider-card">
-                                    <span></span>
+                                <div class="al-posts-card-data-mounth">
+                                    <?php echo get_the_date('M')?>
                                 </div>
-                                <p className="card-text">{ReactHtmlParser(post.description)}</p>
-                                <br/>
-                                {post.url != null &&
-                                    <p className="card-text-bottom">
-                                        <a target="_blank" href={post.url}>Leia mais...</a>
-                                    </p>
-                                }
                             </div>
-                            <div className="card-footer bg-transparent al-posts-card-footer">
-                                <small className="al-posts-card-footer-categories"><strong>Categorias:</strong> {
-                                    post.categories.map((category, i) => {
-                                        return(
-                                            <React.Fragment>
-                                                <a href="#">{category}</a>{(i == (post.categories.length-1) ? '' : ', ')}
-                                            </React.Fragment>
-                                        )
-                                    })
-                                } </small> <br/>
-                                <small className="al-posts-card-footer-tags"><strong>Tags:</strong> {
-                                    post.tags.map((tag, i) => {
-                                        return(
-                                            <React.Fragment>
-                                                <a href="#">{tag}</a> {(i == (post.tags.length-1) ? '' : ' | ')}
-                                            </React.Fragment>
-                                        )
-                                    })
-                                }</small>
+                            <div style=" background:url('<?php the_post_thumbnail_url(); ?>')" class="card-img-top" alt="...">
                             </div>
                         </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><?php the_title()?></h5>
+                            <div class="al-posts-divider-card">
+                                <span></span>
+                            </div>
+                            <?php the_excerpt() ?>
+                            <br/>
+                            <p class="card-text-bottom">
+                                <a target="_blank" href="<?php the_permalink()?>">Leia mais...</a>
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent al-posts-card-footer">
+                            <small class="al-posts-card-footer-categories">
+                                <strong>Categorias:</strong>
+                                <?php the_category(', '); ?>
+                            </small> <br/>
+                            <small class="al-posts-card-footer-tags">
+                                <strong>Tags:</strong>
+                                <?php the_tags(', '); ?>
+                            </small>
+                        </div>
                     </div>
-                )
-            })}
+                </div>
+            <?php
+                endwhile;
+                    wp_reset_postdata();
+                endif;
+            ?>
         </div>
     </div>
-    <div className="al-posts-divider">
+    <div class="al-posts-divider">
         <span></span>
         <span></span>
     </div>
-    <div className="d-flex align-items-center al-posts-footer justify-content-center">
-        <a target="_blank" href="https://www.instagram.com/animallife24h/" className="al-posts-button" >Todos os posts</a>
+    <div class="d-flex align-items-center al-posts-footer justify-content-center">
+        <a target="_blank" href="<?php echo esc_url( get_permalink( get_page_by_path( 'noticias' ) ) );?>" class="al-posts-button">Todos os posts</a>
     </div>
 </section>

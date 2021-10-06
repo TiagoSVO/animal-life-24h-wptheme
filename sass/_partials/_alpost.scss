@@ -1,184 +1,199 @@
 #al-posts {
-    min-height: 100vh;
-    background-color: #fff;
-    padding: 20px 0;
+    min-height: 100vh !important;
+    background-color: #fff  !important;
+    padding: 20px 0  !important;
 }
 
 #al-posts h2 {    
-    line-height: 75px;
-    font-size: 3em;
-    text-transform: uppercase;
-    font-family: 'Josefin-Sans', 'sans-serif';
-    font-size: 4rem;
-    margin: 0.25em 0px 1px;
+    line-height: 75px  !important;
+    font-size: 3em  !important;
+    text-transform: uppercase  !important;
+    font-family: 'Josefin Sans', 'sans-serif'  !important;
+    font-size: 4rem  !important;
+    font-weight: bold;
+    margin: 0.25em 0px 1px  !important;
 }
 
 .al-posts-divider {
-    position: relative;
-    height: 20px;
-    margin: 10px 0;
+    position: relative  !important;
+    height: 20px !important;
+    margin: 10px 0  !important;
 }
 
 .al-posts-divider span {
-    display: block;
-    height: 10px;
-    width: 100%;
+    display: block  !important;
+    height: 10px  !important;
+    width: 100%  !important;
 }
 
 .al-posts-divider span:nth-child(even) {
-    background-color: rgba(42,172,64,1);
+    background-color: rgba(42,172,64,1) !important;
 }
 .al-posts-divider span:nth-child(odd) {
-    background-color: rgba(13,77,121,1);
+    background-color: rgba(13,77,121,1) !important;
 }
 
 .al-posts-footer {
-    min-height: 100px;
+    min-height: 100px !important;
 }
 
 .al-posts-button {
-    background: linear-gradient(90deg, rgba(42,172,64,1) 0%, rgba(13,77,121,1) 100%);
-    border: none;
-    color: #fff;
-    padding: 10px;
-    font-weight: bold;
-    font-size: 1.5em;
-    text-decoration: none;
-    box-shadow: 0 0 0px #aaa;
-    border-radius: 0.25em;
-    transition: 0.3s;
-    cursor: pointer;
+    background: linear-gradient(90deg, rgba(42,172,64,1) 0%, rgba(13,77,121,1) 100%) !important;
+    border: none !important;
+    color: #fff !important;
+    padding: 10px !important;
+    font-weight: bold !important;
+    font-size: 1.5em !important;
+    text-decoration: none !important;
+    box-shadow: 0 0 0px #aaa !important;
+    border-radius: 0.25em !important;
+    transition: 0.3s !important;
+    cursor: pointer !important;
 }
 
 .al-posts-button:hover {
-    color: #fff;
-    box-shadow: 0px 5px 5px #aaa;
-    transition: 0.3s;
+    color: #fff !important;
+    box-shadow: 0px 5px 5px #aaa !important;
+    transition: 0.3s !important;
 }
 
 .al-posts-button:active {
-    color: rgba($color: #ccc, $alpha: 0.75);
-    font-size: 1.5em;
-    box-shadow: 0 0 0px #aaa;
+    color: rgba($color: #ccc, $alpha: 0.75) !important;
+    font-size: 1.5em !important;
+    box-shadow: 0 0 0px #aaa !important;
 }
 
 #al-posts .container {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
 }
 
 
 .al-posts-card {
-    margin: 0 15px;
-    position: relative;
-    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 0);
-    transition: 0.75s;
+    margin: 0 15px !important;
+    position: relative !important;
+    box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 0) !important;
+    transition: 0.75s !important;
 
     &:hover {
-        box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 1);
-        transition: 0.5s;
+        box-shadow: 0 0 10px rgba($color: #ccc, $alpha: 1) !important;
+        transition: 0.5s !important;
     }
 
 }
 
 .al-posts-card-image-wrap {
-    position: relative;
+    position: relative !important;
 
     .card-img-top {
-        height: 200px;
-        width: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        height: 200px !important;
+        width: 100% !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
     }
 }
 
 .al-posts-card-data-wrap {
-    background: linear-gradient(90deg, rgba(42,172,64,1) 0%, rgba(13,77,121,1) 100%);
-    border: none;
-    color: #fff;
-    width: 75px;
-    height: 75px;
-    position: absolute;
-    bottom: 50px;
-    left: -25px;
-    box-shadow: 0 0px 10px rgba(0,0,0,0.5);
+    background: linear-gradient(90deg, rgba(42,172,64,1) 0%, rgba(13,77,121,1) 100%) !important;
+    border: none !important;
+    color: #fff !important;
+    width: 75px !important;
+    height: 75px !important;
+    position: absolute !important;
+    bottom: 50px !important;
+    left: -25px !important;
+    box-shadow: 0 0px 10px rgba(0,0,0,0.5) !important;
 
 }
 
 .al-posts-card-data-day, .al-posts-card-data-mounth {
-    text-align: center;
-    width: 100%;
-    line-height: 1.5em;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: bold;
+    text-align: center !important;
+    width: 100% !important;
+    line-height: 1.5em !important;
+    font-size: 1.5em !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
 }
 
 .al-posts-card img {
-    min-height: 200px;
+    min-height: 200px !important;
 }
 
 .al-posts-card h5 {
-    color: rgba(13,77,121,1);
+    color: rgba(13,77,121,1) !important;
+    font-size: 1.2em;
 }
 
 .al-posts-divider-card {
-    margin: 10px 0;
+    margin: 10px 0 !important;
+}
+
+.card-body {
+    p {
+        text-align: justify !important;
+        line-height: 1.3em;
+        font-size: 1em;
+        margin-bottom: 2em;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+
+    }
 }
 
 .card-text {
-    text-align: justify;
+    text-align: justify !important;
 }
 
 .card-text-bottom {
-    text-align: right;
+    text-align: right !important;
     
     a {
-        color: rgba(42,172,64,1);
-        text-decoration: none;
-        transition: 0.3s;
+        color: rgba(42,172,64,1) !important;
+        text-decoration: none !important;
+        transition: 0.3s !important;
 
         &:hover {
-            color: rgba(13,77,121,1);
-            transition: 0.5s;
+            color: rgba(13,77,121,1) !important;
+            transition: 0.5s !important;
         }
     }
 }
 
 .al-posts-divider-card span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(90deg, rgba(42,172,64,1) 0%, rgba(13,77,121,1) 100%);
+    display: block !important;
+    height: 2px !important;
+    width: 100% !important;
+    background: linear-gradient(90deg, rgba(42,172,64,1) 0%, rgba(13,77,121,1) 100%) !important;
 }
 
 .al-posts-card-footer {
-    color: #999;
-    transition: 0.3s;
+    color: #999 !important;
+    transition: 0.3s !important;
 
     a {
-        text-decoration: none;
-        color: inherit;
+        text-decoration: none !important;
+        color: inherit !important;
     }
 
     .al-posts-card-footer-categories {
         a:hover {
-            color: rgba(42,172,64,1);
+            color: rgba(42,172,64,1) !important;
         }
     
         a:active {
-            color: rgba(13,77,121,1)
+            color: rgba(13,77,121,1) !important;
         }
     }
 
     .al-posts-card-footer-tags {
         a:hover {
-            color: rgba(13,77,121,1)
+            color: rgba(13,77,121,1) !important;
         }
     
         a:active {
-            color: rgba(42,172,64,1);
+            color: rgba(42,172,64,1) !important;
         }
     }
 }
