@@ -1122,15 +1122,42 @@ body {
 /* line 123, sass/_partials/_alpost.scss */
 .al-posts-card h5 {
   color: #0d4d79 !important;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  font-weight: 500;
 }
 
-/* line 128, sass/_partials/_alpost.scss */
+/* line 129, sass/_partials/_alpost.scss */
 .al-posts-divider-card {
   margin: 10px 0 !important;
 }
 
 /* line 133, sass/_partials/_alpost.scss */
+.card-body {
+  position: relative;
+}
+/* line 136, sass/_partials/_alpost.scss */
+.card-body p.card-text-bottom {
+  width: 100%;
+  text-align: right !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 15px;
+  margin-bottom: 5px !important;
+}
+/* line 145, sass/_partials/_alpost.scss */
+.card-body p.card-text-bottom a {
+  color: #2aac40 !important;
+  text-decoration: none !important;
+  transition: 0.3s !important;
+  line-height: 1.3em;
+}
+/* line 151, sass/_partials/_alpost.scss */
+.card-body p.card-text-bottom a:hover {
+  color: #0d4d79 !important;
+  transition: 0.5s !important;
+}
+/* line 158, sass/_partials/_alpost.scss */
 .card-body p {
   text-align: justify !important;
   line-height: 1.3em;
@@ -1141,28 +1168,12 @@ body {
   hyphens: auto;
 }
 
-/* line 145, sass/_partials/_alpost.scss */
+/* line 170, sass/_partials/_alpost.scss */
 .card-text {
   text-align: justify !important;
 }
 
-/* line 149, sass/_partials/_alpost.scss */
-.card-text-bottom {
-  text-align: right !important;
-}
-/* line 152, sass/_partials/_alpost.scss */
-.card-text-bottom a {
-  color: #2aac40 !important;
-  text-decoration: none !important;
-  transition: 0.3s !important;
-}
-/* line 157, sass/_partials/_alpost.scss */
-.card-text-bottom a:hover {
-  color: #0d4d79 !important;
-  transition: 0.5s !important;
-}
-
-/* line 164, sass/_partials/_alpost.scss */
+/* line 174, sass/_partials/_alpost.scss */
 .al-posts-divider-card span {
   display: block !important;
   height: 2px !important;
@@ -1170,29 +1181,33 @@ body {
   background: linear-gradient(90deg, #2aac40 0%, #0d4d79 100%) !important;
 }
 
-/* line 171, sass/_partials/_alpost.scss */
+/* line 181, sass/_partials/_alpost.scss */
 .al-posts-card-footer {
   color: #999 !important;
   transition: 0.3s !important;
 }
-/* line 175, sass/_partials/_alpost.scss */
+/* line 185, sass/_partials/_alpost.scss */
 .al-posts-card-footer a {
   text-decoration: none !important;
   color: inherit !important;
 }
-/* line 181, sass/_partials/_alpost.scss */
+/* line 190, sass/_partials/_alpost.scss */
+.al-posts-card-footer p {
+  margin-bottom: 10px !important;
+}
+/* line 197, sass/_partials/_alpost.scss */
 .al-posts-card-footer .al-posts-card-footer-categories a:hover {
   color: #2aac40 !important;
 }
-/* line 185, sass/_partials/_alpost.scss */
+/* line 201, sass/_partials/_alpost.scss */
 .al-posts-card-footer .al-posts-card-footer-categories a:active {
   color: #0d4d79 !important;
 }
-/* line 191, sass/_partials/_alpost.scss */
+/* line 207, sass/_partials/_alpost.scss */
 .al-posts-card-footer .al-posts-card-footer-tags a:hover {
   color: #0d4d79 !important;
 }
-/* line 195, sass/_partials/_alpost.scss */
+/* line 211, sass/_partials/_alpost.scss */
 .al-posts-card-footer .al-posts-card-footer-tags a:active {
   color: #2aac40 !important;
 }

@@ -122,7 +122,8 @@
 
 .al-posts-card h5 {
     color: rgba(13,77,121,1) !important;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-weight: 500;
 }
 
 .al-posts-divider-card {
@@ -130,6 +131,30 @@
 }
 
 .card-body {
+    position: relative;
+
+    p.card-text-bottom {
+        width: 100%;
+        text-align: right !important;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 15px;
+        margin-bottom: 5px !important;
+
+        a {
+            color: rgba(42,172,64,1) !important;
+            text-decoration: none !important;
+            transition: 0.3s !important;
+            line-height: 1.3em;
+
+            &:hover {
+                color: rgba(13,77,121,1) !important;
+                transition: 0.5s !important;
+            }
+        }
+    }
+
     p {
         text-align: justify !important;
         line-height: 1.3em;
@@ -144,21 +169,6 @@
 
 .card-text {
     text-align: justify !important;
-}
-
-.card-text-bottom {
-    text-align: right !important;
-    
-    a {
-        color: rgba(42,172,64,1) !important;
-        text-decoration: none !important;
-        transition: 0.3s !important;
-
-        &:hover {
-            color: rgba(13,77,121,1) !important;
-            transition: 0.5s !important;
-        }
-    }
 }
 
 .al-posts-divider-card span {
@@ -177,7 +187,13 @@
         color: inherit !important;
     }
 
+    p {
+        margin-bottom: 10px !important;
+    }
+
     .al-posts-card-footer-categories {
+
+
         a:hover {
             color: rgba(42,172,64,1) !important;
         }

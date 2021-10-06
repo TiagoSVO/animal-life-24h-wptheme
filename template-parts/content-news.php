@@ -50,14 +50,18 @@
                             </p>
                         </div>
                         <div class="card-footer bg-transparent al-posts-card-footer">
-                            <small class="al-posts-card-footer-categories">
-                                <strong>Categorias:</strong>
-                                <?php the_category(', '); ?>
-                            </small> <br/>
-                            <small class="al-posts-card-footer-tags">
-                                <strong>Tags:</strong>
-                                <?php the_tags(' | '); ?>
-                            </small>
+                            <p>
+                                <small class="al-posts-card-footer-categories">
+                                    <strong>Categorias:</strong>
+                                    <?php the_category(', '); ?>
+                                </small>
+                            </p>
+                            <p>
+                                <small class="al-posts-card-footer-tags">
+                                    <strong>Tags:</strong>
+                                    <?php the_tags('', ' | '); ?>
+                                </small>
+                            </p>
                         </div>
                     </div>
                 </div>
