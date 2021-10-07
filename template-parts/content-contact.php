@@ -14,31 +14,7 @@
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col al-contact-line-divider-right">
                 <div class="al-contact-content-wrap">
-                    <form class="row g-3">
-                        <div class="col-12">
-                            <label for="alInputNome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="alInputNome" />
-                        </div>
-                        <div class="col-12">
-                            <label for="alInputEmail" class="form-label">E-mail</label>
-                            <input type="email" class="form-control" id="alInputEmail" />
-                        </div>
-                        <div class="col-12">
-                            <label for="alInputTelefone" class="form-label">Telefone</label>
-                            <input type="text" class="form-control" id="alInputTelefone" />
-                        </div>
-                        <div class="col-12">
-                            <label for="alInputAssunto" class="form-label">Assunto</label>
-                            <input type="text" class="form-control" id="alInputAssunto" />
-                        </div>
-                        <div class="col-12">
-                            <label for="alInputAssunto" class="form-label">Assunto</label>
-                            <textarea rows="10" class="form-control" id="alInputAssunto"></textarea>
-                        </div>
-                        <div class="col-12">
-                            <button type="button" class="btn btn btn-light float-end">Enviar</button>
-                        </div>
-                    </form>
+                    <?php echo do_shortcode('[contact-form-7 id="91" title="Formulário de contato 1" class="row g-3"]'); ?>
                 </div>
             </div>
             <div class="col">
@@ -61,22 +37,24 @@
                         <div class="row al-contact-content-info">
                             <div class="col">
                                 <p><strong>TELEFONES</strong></p>
-                                <p><a target='_blank' href="tel: (61) 3542-4076">(61) 3542-4076</a> | <a target='_blank' href="https://wa.me/5561996853227">(61) 99685-3227</a></p>
+                                <p><a target='_blank' href="<?php echo get_theme_mod('set_phone'); ?>">(61) 3542-4076</a> | <a target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>">(61) 99685-3227</a></p>
                             </div>
                         </div>
                         <div class="row al-contact-content-info">
                             <div class="col">
                                 <p><strong>E-MAIL</strong></p>
-                                <p>animallifecontato@gmail.com</p>
+                                <p>
+                                    <a href="<?php echo get_theme_mod('set_email'); ?>"><?php echo get_theme_mod('set_email'); ?></a>
+                                </p>
                             </div>
                         </div>
                         <div class="row al-contact-content-info">
                             <div class="col">
                                 <p><strong>REDES SOCIAIS</strong></p>
                                 <div class="al-contact-redes-sociais">
-                                    <a target='_blank' href="https://wa.me/5561996853227"><i class="bi bi-whatsapp" role="img" aria-label="Telefone - (61) 3542-4076"></i></a>
-                                    <a href="https://www.instagram.com/animallife24h/"><i class="bi bi-instagram" role="img" aria-label="Telefone - (61) 3542-4076"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCgDi63POKCY6MzlytsfbfHw"><i class="bi bi-youtube" role="img" aria-label="Telefone - (61) 3542-4076"></i></a>
+                                    <a target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - (61) 99685-3227"></i></a>
+                                    <a href="<?php echo get_theme_mod('set_insta'); ?>/"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
+                                    <a href="<?php echo get_theme_mod('set_youtube'); ?>"><i class="bi bi-youtube" role="img" aria-label="Youtube"></i></a>
                                 </div>
                             </div>
                         </div>

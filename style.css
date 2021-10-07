@@ -820,15 +820,19 @@ body {
   border: 1px solid #093854 !important;
 }
 /* line 90, sass/_partials/_contact.scss */
+#al-contact .al-submit-wrap {
+  margin-top: 1em;
+}
+/* line 94, sass/_partials/_contact.scss */
 #al-contact .al-contact-content-wrap {
   padding: 0 20px !important;
 }
-/* line 94, sass/_partials/_contact.scss */
+/* line 98, sass/_partials/_contact.scss */
 #al-contact .al-contact-line-divider-right {
   border-right: 1px solid #093854 !important;
   padding: 30px !important;
 }
-/* line 99, sass/_partials/_contact.scss */
+/* line 103, sass/_partials/_contact.scss */
 #al-contact h2 {
   text-align: center !important;
   line-height: 1 !important;
@@ -838,7 +842,7 @@ body {
   font-weight: bold;
   font-size: 3.7rem !important;
 }
-/* line 109, sass/_partials/_contact.scss */
+/* line 113, sass/_partials/_contact.scss */
 #al-contact #al-posts h2 {
   line-height: 75px !important;
   font-size: 3em !important;
@@ -848,17 +852,17 @@ body {
   font-size: 4rem !important;
   margin: 0.25em 0px 1px !important;
 }
-/* line 121, sass/_partials/_contact.scss */
+/* line 125, sass/_partials/_contact.scss */
 #al-contact .al-contact-content-info .col {
   border-bottom: 1px solid #093854 !important;
   margin: 0 20px 20px !important;
   padding: 0 !important;
 }
-/* line 127, sass/_partials/_contact.scss */
+/* line 131, sass/_partials/_contact.scss */
 #al-contact .al-contact-content-info:last-child .col {
   border-bottom: none !important;
 }
-/* line 132, sass/_partials/_contact.scss */
+/* line 136, sass/_partials/_contact.scss */
 #al-contact .al-contact-content-info .al-contact-redes-sociais a i {
   color: #fff !important;
   font-size: 3em !important;
@@ -866,55 +870,55 @@ body {
   text-shadow: 0px 0px 0px rgba(255, 255, 255, 0) !important;
   transition: 0.3s text-shadow !important;
 }
-/* line 139, sass/_partials/_contact.scss */
+/* line 143, sass/_partials/_contact.scss */
 #al-contact .al-contact-content-info .al-contact-redes-sociais a i:hover {
   text-shadow: 0px 0px 5px white !important;
   transition: 0.3s text-shadow !important;
 }
 
 @media (max-width: 991px) {
-  /* line 150, sass/_partials/_contact.scss */
+  /* line 154, sass/_partials/_contact.scss */
   #al-contact .al-contact-content-wrap {
     padding: 0 0 !important;
   }
-  /* line 154, sass/_partials/_contact.scss */
+  /* line 158, sass/_partials/_contact.scss */
   #al-contact .al-contact-line-divider-right {
     border-right: 2px solid #093854 !important;
     padding: 15px !important;
   }
-  /* line 159, sass/_partials/_contact.scss */
+  /* line 163, sass/_partials/_contact.scss */
   #al-contact h2 {
     font-size: 2rem !important;
   }
 }
 @media (max-width: 767px) {
-  /* line 169, sass/_partials/_contact.scss */
+  /* line 173, sass/_partials/_contact.scss */
   #al-contact .al-contact-line-divider-right {
     border-right: none !important;
   }
 
-  /* line 176, sass/_partials/_contact.scss */
+  /* line 180, sass/_partials/_contact.scss */
   #al-contact .al-contact-pegadas .al-contact-pegada {
     width: 50px !important;
     height: 50px !important;
     background-size: 45px !important;
   }
-  /* line 181, sass/_partials/_contact.scss */
+  /* line 185, sass/_partials/_contact.scss */
   #al-contact .al-contact-pegadas .al-contact-pegada:nth-child(1) {
     bottom: 0 !important;
     right: 7% !important;
   }
-  /* line 186, sass/_partials/_contact.scss */
+  /* line 190, sass/_partials/_contact.scss */
   #al-contact .al-contact-pegadas .al-contact-pegada:nth-child(2) {
     bottom: 7% !important;
     right: 0% !important;
   }
-  /* line 191, sass/_partials/_contact.scss */
+  /* line 195, sass/_partials/_contact.scss */
   #al-contact .al-contact-pegadas .al-contact-pegada:nth-child(3) {
     bottom: 15% !important;
     right: 5% !important;
   }
-  /* line 196, sass/_partials/_contact.scss */
+  /* line 200, sass/_partials/_contact.scss */
   #al-contact .al-contact-pegadas .al-contact-pegada:nth-child(4) {
     bottom: 22% !important;
     right: 0 !important;
