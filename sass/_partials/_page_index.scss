@@ -1,0 +1,86 @@
+#al-page {
+    min-height: 100vh;
+    display: grid;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.5em;
+    text-indent: 2em;
+
+    .al-page-post-image {
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: 50% 50% !important;
+        box-shadow: inset 0px 10px 20px rgba($color: #333, $alpha:0.5), inset 0px -10px 20px rgba($color: #333, $alpha:0.5);
+    }
+
+    .al-page-content {
+        padding: 2em 0;
+    }
+
+    .al-pegada {
+        width: 100px;
+        height: 100px;
+        background-color: transparent !important;
+        background-repeat: no-repeat !important;
+        background-size: 90px !important;
+        position: absolute;
+        z-index: 0;
+        opacity: 1;
+        filter: brightness(0.0);
+    }
+
+    .al-pegadas .al-pegada:nth-child(1) {
+        bottom: 0;
+        right: 15%;
+    }
+
+    .al-pegadas .al-pegada:nth-child(2) {
+        bottom: 10%;
+        right: 0%;
+    }
+
+    .al-pegadas .al-pegada:nth-child(3) {
+        bottom: 25%;
+        right: 10%;
+    }
+
+    .al-pegadas .al-pegada:nth-child(4) {
+        bottom: 40%;
+        right: 0  ;
+    }
+}
+
+@media (max-width: 767px) {
+    #al-page .al-pegadas  {
+
+        .al-pegada {
+            width: 50px;
+            height: 50px;
+            background-size: 45px;
+
+            &:nth-child(1) {
+                bottom: 0;
+                right: 7%;
+            }
+
+            &:nth-child(2) {
+                bottom: 7%;
+                right: 0%;
+            }
+
+            &:nth-child(3) {
+                bottom: 15%;
+                right: 5%;
+            }
+
+            &:nth-child(4) {
+                bottom: 22%;
+                right: 0;
+            }
+        }
+
+    }
+}

@@ -79,55 +79,139 @@ body {
   }
 }
 @media only screen {
-  /* line 71, sass/_partials/_custom.scss */
+  /* line 72, sass/_partials/_custom.scss */
   html {
     overflow-y: scroll;
   }
 
-  /* line 74, sass/_partials/_custom.scss */
+  /* line 75, sass/_partials/_custom.scss */
   * {
     transition: 0.3s;
     scrollbar-width: thin;
     scrollbar-color: rgba(119, 119, 119, 0) rgba(221, 221, 221, 0);
   }
-  /* line 77, sass/_partials/_custom.scss */
+  /* line 78, sass/_partials/_custom.scss */
   *::-webkit-scrollbar {
     width: 7px;
   }
-  /* line 81, sass/_partials/_custom.scss */
+  /* line 82, sass/_partials/_custom.scss */
   *::-webkit-scrollbar-track {
     background-color: rgba(221, 221, 221, 0);
     transition: 0.3s;
   }
-  /* line 84, sass/_partials/_custom.scss */
+  /* line 85, sass/_partials/_custom.scss */
   *::-webkit-scrollbar-track:hover {
     background-color: rgba(221, 221, 221, 0.2);
   }
-  /* line 89, sass/_partials/_custom.scss */
+  /* line 90, sass/_partials/_custom.scss */
   *::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: rgba(85, 85, 85, 0);
     transition: 0.3s;
   }
-  /* line 93, sass/_partials/_custom.scss */
+  /* line 94, sass/_partials/_custom.scss */
   *::-webkit-scrollbar-thumb:hover {
     background-color: rgba(85, 85, 85, 0.7);
   }
-  /* line 101, sass/_partials/_custom.scss */
+  /* line 102, sass/_partials/_custom.scss */
   *:hover {
     scrollbar-color: rgba(119, 119, 119, 0.7) rgba(221, 221, 221, 0.2);
     transition: 0.3s;
   }
-  /* line 102, sass/_partials/_custom.scss */
+  /* line 103, sass/_partials/_custom.scss */
   *:hover::-webkit-scrollbar-track {
     background-color: rgba(221, 221, 221, 0.2);
     transition: 0.3s;
   }
-  /* line 106, sass/_partials/_custom.scss */
+  /* line 107, sass/_partials/_custom.scss */
   *:hover::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: rgba(85, 85, 85, 0.7);
     transition: 0.3s;
+  }
+}
+/* line 1, sass/_partials/_page_index.scss */
+#al-page {
+  min-height: 100vh;
+  display: grid;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5em;
+  text-indent: 2em;
+}
+/* line 10, sass/_partials/_page_index.scss */
+#al-page .al-page-post-image {
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% 50% !important;
+  box-shadow: inset 0px 10px 20px rgba(51, 51, 51, 0.5), inset 0px -10px 20px rgba(51, 51, 51, 0.5);
+}
+/* line 19, sass/_partials/_page_index.scss */
+#al-page .al-page-content {
+  padding: 2em 0;
+}
+/* line 23, sass/_partials/_page_index.scss */
+#al-page .al-pegada {
+  width: 100px;
+  height: 100px;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: 90px !important;
+  position: absolute;
+  z-index: 0;
+  opacity: 1;
+  filter: brightness(0);
+}
+/* line 35, sass/_partials/_page_index.scss */
+#al-page .al-pegadas .al-pegada:nth-child(1) {
+  bottom: 0;
+  right: 15%;
+}
+/* line 40, sass/_partials/_page_index.scss */
+#al-page .al-pegadas .al-pegada:nth-child(2) {
+  bottom: 10%;
+  right: 0%;
+}
+/* line 45, sass/_partials/_page_index.scss */
+#al-page .al-pegadas .al-pegada:nth-child(3) {
+  bottom: 25%;
+  right: 10%;
+}
+/* line 50, sass/_partials/_page_index.scss */
+#al-page .al-pegadas .al-pegada:nth-child(4) {
+  bottom: 40%;
+  right: 0;
+}
+
+@media (max-width: 767px) {
+  /* line 59, sass/_partials/_page_index.scss */
+  #al-page .al-pegadas .al-pegada {
+    width: 50px;
+    height: 50px;
+    background-size: 45px;
+  }
+  /* line 64, sass/_partials/_page_index.scss */
+  #al-page .al-pegadas .al-pegada:nth-child(1) {
+    bottom: 0;
+    right: 7%;
+  }
+  /* line 69, sass/_partials/_page_index.scss */
+  #al-page .al-pegadas .al-pegada:nth-child(2) {
+    bottom: 7%;
+    right: 0%;
+  }
+  /* line 74, sass/_partials/_page_index.scss */
+  #al-page .al-pegadas .al-pegada:nth-child(3) {
+    bottom: 15%;
+    right: 5%;
+  }
+  /* line 79, sass/_partials/_page_index.scss */
+  #al-page .al-pegadas .al-pegada:nth-child(4) {
+    bottom: 22%;
+    right: 0;
   }
 }
 /* line 1, sass/_partials/_app.scss */
@@ -482,6 +566,16 @@ body {
     opacity: 0.5;
   }
 }
+/* line 1, sass/_partials/_about_page.scss */
+#al-about-page {
+  min-height: 70vh;
+  display: grid;
+}
+/* line 5, sass/_partials/_about_page.scss */
+#al-about-page .al-about-page-content {
+  padding: 2em 0;
+}
+
 /* line 1, sass/_partials/_alservice.scss */
 #al-services {
   min-height: 100vh !important;
