@@ -4,8 +4,6 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    font-size: 1.5em;
-    text-indent: 2em;
 
     .al-page-post-image {
         position: relative;
@@ -20,8 +18,8 @@
 
     .al-page-content {
         padding: 2em 0;
-        overflow: hidden;
         min-height: 75vh;
+        font-size: 1.5em;
     }
 
     .al-pegada {

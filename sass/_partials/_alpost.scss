@@ -214,3 +214,15 @@
     }
 }
 
+.al-posts-card-link-wrap {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+.al-posts-content-page {
+    font-size: 0.7em;
+}
