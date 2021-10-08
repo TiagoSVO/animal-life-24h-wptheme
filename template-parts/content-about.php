@@ -28,7 +28,7 @@
                         echo '<ul>';
                         while ( $the_query->have_posts() ) {
                             $the_query->the_post();
-                            the_content();
+                            the_excerpt();
                         }
                     } else {
                         echo "<p>Nenhum conteúdo disponível. É necessário criar uma página \"Quem Somos\" com o slug ('quem-somos').</p>";
