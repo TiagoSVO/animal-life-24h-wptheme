@@ -191,9 +191,9 @@ body {
 @media (max-width: 767px) {
   /* line 61, sass/_partials/_page_index.scss */
   #al-page .al-pegadas .al-pegada {
-    width: 50px;
-    height: 50px;
-    background-size: 45px;
+    width: 35px;
+    height: 35px;
+    background-size: 30px !important;
   }
   /* line 66, sass/_partials/_page_index.scss */
   #al-page .al-pegadas .al-pegada:nth-child(1) {
@@ -1091,6 +1091,30 @@ body {
     right: 0 !important;
   }
 }
+/* line 209, sass/_partials/_contact.scss */
+.al-contact-page .container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/* line 213, sass/_partials/_contact.scss */
+.al-contact-page .container a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 218, sass/_partials/_contact.scss */
+.al-contact-page .container .btn {
+  font-weight: bold;
+}
+/* line 221, sass/_partials/_contact.scss */
+.al-contact-page .container .btn:hover {
+  background-color: #2aac40;
+  color: #fff;
+}
+/* line 227, sass/_partials/_contact.scss */
+.al-contact-page .container .al-contact-content-info i {
+  font-size: 1em;
+}
+
 /* line 1, sass/_partials/_alpost.scss */
 #al-posts {
   min-height: 100vh !important;
