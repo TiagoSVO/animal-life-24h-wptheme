@@ -1536,3 +1536,34 @@ body {
     margin: 0 15px;
   }
 }
+/* line 1, sass/_partials/_whatsapp_button.scss */
+.al-whatsapp-float {
+  color: #fff;
+  background-color: #00e676;
+  border-color: #01b35d;
+  margin-right: 10px;
+  position: fixed;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 25px;
+  right: 25px;
+  z-index: 6000;
+  border: solid 3px #fff;
+  text-align: center;
+  box-shadow: 0 0 10px #00140b;
+}
+/* line 17, sass/_partials/_whatsapp_button.scss */
+.al-whatsapp-float i {
+  width: 100%;
+  font-size: 1.8em;
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+/* line 26, sass/_partials/_whatsapp_button.scss */
+.al-whatsapp-float:hover {
+  color: #fff;
+  box-shadow: 0 0 10px #fff;
+}

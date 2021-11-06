@@ -7,7 +7,7 @@
           </div>
       </div>
   </section>
-
+  <?php get_template_part('template-parts/content', 'whatsapp') ?>
   <?php wp_footer();?>
   </body>
 </html>
