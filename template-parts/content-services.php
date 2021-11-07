@@ -41,7 +41,7 @@ $service_children = empty($service_children) ? $service_children : array_reverse
                                 </a>
                             </div>
                         <?php endforeach; ?>
-                    <?php else: ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
