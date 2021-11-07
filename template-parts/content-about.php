@@ -22,10 +22,8 @@
         <div class="row gx-0">
             <div class="col p-5">
                 <?php
-
                     $the_query = new WP_Query( array( 'pagename' => 'quem-somos' ) );
                     if ( $the_query->have_posts() ) {
-                        echo '<ul>';
                         while ( $the_query->have_posts() ) {
                             $the_query->the_post();
                             the_excerpt();

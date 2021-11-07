@@ -15,7 +15,7 @@
     <?php if(get_the_post_thumbnail_url()):?>
         <div class="al-page-post-image" style="background:url('<?php the_post_thumbnail_url(); ?>');">
         </div>
-    <? endif; ?>
+    <?php endif; ?>
     <section class="container">
       <div class="row">
         <div class="col">

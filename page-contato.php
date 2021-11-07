@@ -9,7 +9,7 @@
     <?php if(get_the_post_thumbnail_url()):?>
         <div class="al-page-post-image" style="background:url('<?php the_post_thumbnail_url(); ?>');">
         </div>
-    <? endif; ?>
+    <?php endif; ?>
     <div class="al-pegadas">
         <span class="al-pegada" style="background:url('<?php echo get_template_directory_uri() . '/images/pegada.svg';?>')"></span>
         <span class="al-pegada" style="background:url('<?php echo get_template_directory_uri() . '/images/pegada.svg';?>')"></span>
