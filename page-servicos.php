@@ -34,30 +34,33 @@ $service_children = empty($service_children) ? $service_children : array_reverse
           <div class="row">
             <div class="col">
               <div class="al-page-content al-service-page">
-
-                    <?php foreach($service_children as $service):?>
-                        <a class="al-service-page-link" href="<?php echo get_permalink($service)?>">
-                            <div class="card mb-3">
-                              <div class="row g-0">
-                                <div class="col-md-3">
-                                    <div class="al-service-card d-flex justify-content-center">
-                                        <div class="al-hexagon-wrap">
-                                            <div class="al-hexagon-img" style=" background:url('<?php echo get_the_post_thumbnail_url($service->ID); ?>')" ></div>
+                    <?php if(empty($service_children)): ?>
+                        <p>Não há conteúdo disponível!</p>
+                        <p>Para apresentar conteúdo nesta página é necessário ter uma página chamada de Serviço e páginas filhas para cada serviço.</p>
+                    <?php else: ?>
+                        <?php foreach($service_children as $service):?>
+                            <a class="al-service-page-link" href="<?php echo get_permalink($service)?>">
+                                <div class="card mb-3">
+                                  <div class="row g-0">
+                                    <div class="col-md-3">
+                                        <div class="al-service-card d-flex justify-content-center">
+                                            <div class="al-hexagon-wrap">
+                                                <div class="al-hexagon-img" style=" background:url('<?php echo get_the_post_thumbnail_url($service->ID); ?>')" ></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-9">
-                                  <div class="card-body">
-                                    <h5 class="card-title"><?php echo get_the_title($service->ID); ?></h5>
-                                    <p class="card-text"><?php echo($service->post_excerpt); ?></p>
+                                    <div class="col-md-9">
+                                      <div class="card-body">
+                                        <h5 class="card-title"><?php echo get_the_title($service->ID); ?></h5>
+                                        <p class="card-text"><?php echo($service->post_excerpt); ?></p>
+                                      </div>
+                                    </div>
                                   </div>
                                 </div>
-                              </div>
-                            </div>
-                        </a>
-                    <?php endforeach; ?>
-
-              </div>
+                            </a>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
             </div>
           </div>
         </section>

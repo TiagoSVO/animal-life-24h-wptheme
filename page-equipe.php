@@ -33,23 +33,28 @@ $equipe_people = empty($equipe_people) ? $equipe_people : array_reverse($equipe_
       <div class="row">
         <div class="col">
           <div class="al-page-content">
-            <?php foreach($equipe_people as $person):?>
-              <a title="Saiba mais..." class="al-team-page-link" href="<?php echo get_permalink($person)?>">
-              <div class="card mb-3 al-team-card">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <div class="al-team-card-img" style=" background:url('<?php echo get_the_post_thumbnail_url($person->ID); ?>')"></div>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title"><?php echo get_the_title($person->ID); ?></h5>
-                      <p class="card-text"><?php echo get_the_excerpt($person->ID); ?></p>
+            <?php if(empty($equipe_people)): ?>
+              <p>Não há conteúdo disponível!</p>
+              <p>Para apresentar conteúdo nesta página é necessário ter uma página chamada de Equipe e páginas filhas para cada membro da equipe.</p>
+            <?php else: ?>
+              <?php foreach($equipe_people as $person):?>
+                <a title="Saiba mais..." class="al-team-page-link" href="<?php echo get_permalink($person)?>">
+                  <div class="card mb-3 al-team-card">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <div class="al-team-card-img" style=" background:url('<?php echo get_the_post_thumbnail_url($person->ID); ?>')"></div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title"><?php echo get_the_title($person->ID); ?></h5>
+                          <p class="card-text"><?php echo get_the_excerpt($person->ID); ?></p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </a>
-            <?php endforeach;?>
+                </a>
+              <?php endforeach;?>
+            <?php endif; ?>
           </div>
         </div>
       </div>

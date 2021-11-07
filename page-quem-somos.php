@@ -20,7 +20,12 @@
       <div class="row">
         <div class="col">
           <div class="al-page-content">
-            <?php the_content() ?>
+            <?php if (get_the_content()): 
+              the_content();
+              else:
+            ?>
+              <p><?php _e("There's nothing yet to be displayed..."); ?></p>
+            <?php endif; ?>
           </div>
         </div>
       </div>

@@ -18,22 +18,27 @@ $team_children = empty($team_children) ? $team_children : array_reverse($team_ch
         <h2>Equipe</h2>
     </div>
     <div class="al-team-wrap flex-wrap d-flex justify-content-between">
-        <?php foreach($team_children as $person_team):?>
+        <?php if(empty($team_children)): ?>
+              <p>Não há conteúdo disponível!</p>
+              <p>Para apresentar conteúdo nesta página é necessário ter uma página chamada de Equipe e páginas filhas para cada membro da equipe.</p>
+        <?php else: ?>
+            <?php foreach($team_children as $person_team):?>
 
-            <div class="al-team-person" style=" background:url('<?php echo get_the_post_thumbnail_url($person_team->ID); ?>')">
-                <div class="al-team-person-content">
-                    <h3><?php echo get_the_title($person_team->ID); ?></h3>
-                    <hr/>
-                    <?php echo($person_team->post_excerpt);?>
-                    <hr/>
-                    <div class="al-team-person-content-linkwrap">
-                        <a href="<?php echo get_permalink($person_team)?>">
-                            Saiba mais...
-                        </a>
+                <div class="al-team-person" style=" background:url('<?php echo get_the_post_thumbnail_url($person_team->ID); ?>')">
+                    <div class="al-team-person-content">
+                        <h3><?php echo get_the_title($person_team->ID); ?></h3>
+                        <hr/>
+                        <?php echo($person_team->post_excerpt);?>
+                        <hr/>
+                        <div class="al-team-person-content-linkwrap">
+                            <a href="<?php echo get_permalink($person_team)?>">
+                                Saiba mais...
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 
 </section>

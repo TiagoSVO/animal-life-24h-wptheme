@@ -19,24 +19,29 @@ $service_children = empty($service_children) ? $service_children : array_reverse
         <div class="al-services-content">
             <div class="container">
                 <div class="row justify-content-between text-center ">
-                    <?php foreach($service_children as $service):?>
+                    <?php if(empty($service_children)): ?>
+                          <p>Não há conteúdo disponível!</p>
+                          <p>Para apresentar conteúdo nesta página é necessário ter uma página chamada de Serviços e páginas filhas para cada serviço.</p>
+                    <?php else: ?>
+                        <?php foreach($service_children as $service):?>
 
-                        <div class="col-12 col-md-6 col-lg-4  al-service-card-wrap">
-                            <a href="<?php echo get_permalink($service)?>">
-                                <div class="d-flex">
-                                    <div class="al-service-card">
-                                        <div class="al-hexagon-wrap">
-                                            <div class="al-hexagon-img" style=" background:url('<?php echo get_the_post_thumbnail_url($service->ID); ?>')" ></div>
-                                        </div>
-                                        <div class="al-services-content">
-                                            <h3><?php echo get_the_title($service->ID); ?></h3>
-                                            <p><?php echo($service->post_content); ?></p>
+                            <div class="col-12 col-md-6 col-lg-4  al-service-card-wrap">
+                                <a href="<?php echo get_permalink($service)?>">
+                                    <div class="d-flex">
+                                        <div class="al-service-card">
+                                            <div class="al-hexagon-wrap">
+                                                <div class="al-hexagon-img" style=" background:url('<?php echo get_the_post_thumbnail_url($service->ID); ?>')" ></div>
+                                            </div>
+                                            <div class="al-services-content">
+                                                <h3><?php echo get_the_title($service->ID); ?></h3>
+                                                <p><?php echo($service->post_content); ?></p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                    <?php endforeach; ?>
+                                </a>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php else: ?>
                 </div>
             </div>
         </div>
