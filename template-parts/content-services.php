@@ -34,7 +34,7 @@ $service_children = empty($service_children) ? $service_children : array_reverse
                                             </div>
                                             <div class="al-services-content">
                                                 <h3><?php echo get_the_title($service->ID); ?></h3>
-                                                <p><?php echo($service->post_content); ?></p>
+                                                <p><?php echo($service->post_excerpt); ?></p>
                                             </div>
                                         </div>
                                     </div>
