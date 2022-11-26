@@ -8,6 +8,7 @@
       </div>
   </section>
   <?php get_template_part('template-parts/content', 'whatsapp') ?>
+  <?php get_template_part('template-parts/content', 'instagram') ?>
   <?php wp_footer();?>
   </body>
 </html>

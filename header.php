@@ -63,21 +63,21 @@
         <div class="container">
           <div class="w-50">
             <span class="nav-item me-2">
-              <a target='_blank' href="tel: (61) 3542-4076"><i class="bi bi-telephone-fill" role="img" aria-label="Telefone"></i> (61) 3542-4076</a>
+              <a target='_blank' href="tel: <?php echo get_formatted_global_phone()?>"><i class="bi bi-telephone-fill" role="img" aria-label="Telefone"></i> <?php echo get_formatted_global_phone()?></a>
             </span>
             <span class="nav-item m-2">
-              <a target='_blank' href="https://wa.me/5561996853227"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i> (61) 9.9685-3227 </a>
+              <a target='_blank' href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('set_cell'); ?>&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp"></i> <?php echo get_formatted_global_celphone()?> </a>
             </span>
           </div>
           <div class="w-50 text-end">
             <span class="nav-item m-2">
-              <a target='_blank' href="mailto: animallifecontato@gmail.com"><i class="bi bi-envelope-fill" role="img" aria-label="Email"></i></a>
+              <a target='_blank' href="mailto: <?php echo get_theme_mod('set_email'); ?>"><i class="bi bi-envelope-fill" role="img" aria-label="Email"></i></a>
             </span>
             <span class="nav-item m-2">
-              <a target='_blank' href="https://www.instagram.com/animallife24h/"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
+              <a target='_blank' href="<?php echo get_theme_mod('set_insta'); ?>"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
             </span>
             <span class="nav-item ms-2">
-              <a target='_blank' href="https://www.youtube.com/channel/UCgDi63POKCY6MzlytsfbfHw"><i class="bi bi-youtube" role="img" aria-label="Youtube"></i></a>
+              <a target='_blank' href="<?php echo get_theme_mod('set_youtube'); ?>"><i class="bi bi-youtube" role="img" aria-label="Youtube"></i></a>
             </span>
           </div>
         </div>

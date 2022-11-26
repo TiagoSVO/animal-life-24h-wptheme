@@ -43,7 +43,7 @@
                         <div class="row al-contact-content-info">
                             <div class="col">
                                 <p><strong>TELEFONES</strong></p>
-                                <p><a target='_blank' href="<?php echo get_theme_mod('set_phone'); ?>">(61) 3542-4076</a> | <a target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>">(61) 99685-3227</a></p>
+                                <p><a target='_blank' href="tel: <?php echo get_formatted_global_phone(); ?>"><?php echo get_formatted_global_phone(); ?></a> | <a target='_blank' href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('set_cell'); ?>&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><?php echo get_formatted_global_celphone(); ?></a></p>
                             </div>
                         </div>
                         <div class="row al-contact-content-info">
@@ -58,9 +58,9 @@
                             <div class="col">
                                 <p><strong>REDES SOCIAIS</strong></p>
                                 <div class="al-contact-redes-sociais">
-                                    <a target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - (61) 99685-3227"></i></a>
-                                    <a href="<?php echo get_theme_mod('set_insta'); ?>/"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
-                                    <a href="<?php echo get_theme_mod('set_youtube'); ?>"><i class="bi bi-youtube" role="img" aria-label="Youtube"></i></a>
+                                    <a target='_blank' href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('set_cell'); ?>&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - <?php echo get_formatted_global_celphone();?>"></i></a>
+                                    <a target='_blank' href="<?php echo get_theme_mod('set_insta'); ?>"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a>
+                                    <a target='_blank' href="<?php echo get_theme_mod('set_youtube'); ?>"><i class="bi bi-youtube" role="img" aria-label="Youtube"></i></a>
                                 </div>
                             </div>
                         </div>

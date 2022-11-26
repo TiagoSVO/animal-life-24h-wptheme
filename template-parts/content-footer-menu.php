@@ -73,12 +73,12 @@
                     <p>Segunda-Feira a Domingo 24h</p>
                     <ul>
                         <li>
-                            <a target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>">
-                                <i class="bi bi-whatsapp" role="img" aria-label="Telefone" ></i> (61) 99685-3227
+                            <a target='_blank' href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('set_cell'); ?>&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">
+                                <i class="bi bi-whatsapp" role="img" aria-label="Whatsapp" ></i> <?php echo get_formatted_global_celphone(); ?>
                             </a>
                             |
-                            <a target='_blank' href="tel: <?php echo get_theme_mod('set_phone'); ?>">
-                                <i class="bi bi-telephone-fill" role="img" aria-label="Telefone" ></i> (61) 3542-4076
+                            <a target='_blank' href="tel: <?php echo get_formatted_global_phone(); ?>">
+                                <i class="bi bi-telephone-fill" role="img" aria-label="Telefone" ></i> <?php echo get_formatted_global_phone(); ?>
                             </a>
                         </li>
                         <li>

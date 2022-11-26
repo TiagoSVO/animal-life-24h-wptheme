@@ -58,7 +58,7 @@ function add_attrs_link_main_menu( $atts, $item, $args ) {
 }
 add_filter( 'nav_menu_link_attributes', 'add_attrs_link_main_menu', 10, 3 );
 
-function animallife24h_sidebars(){
+function animallife24h_sidebars() {
   register_sidebar(
     array(
       'name' => __('Services', 'animallife24h'),
@@ -72,3 +72,34 @@ function animallife24h_sidebars(){
   );
 }
 add_action('widgets_init', 'animallife24h_sidebars');
+
+function get_formatted_global_celphone() {
+  $cell_phone = get_theme_mod('set_cell');
+  $cell_phone_numbers = preg_replace('/[^0-9]/','',$cell_phone);
+  $char_size_cell_phone_numbers = strlen($cell_phone_numbers);
+  $formated_cell_phone_numbers = '';
+  if ($char_size_cell_phone_numbers == 13) {
+    $country_code = substr($cell_phone_numbers, -13, 2);
+    $area_code = substr($cell_phone_numbers, -11, 2);
+    $point_number = substr($cell_phone_numbers, -9, 1);
+    $first_four_numbers = substr($cell_phone_numbers, -8, 4);
+    $last_four_numbers = substr($cell_phone_numbers, -4, 4);
+    $formated_cell_phone_numbers = '('.$area_code.') '.$point_number.'.'.$first_four_numbers.'-'.$last_four_numbers;
+  }
+  return  $formated_cell_phone_numbers;
+}
+
+function get_formatted_global_phone() {
+  $phone = get_theme_mod('set_phone');
+  $phone_numbers = preg_replace('/[^0-9]/','',$phone);
+  $char_size_phone_numbers = strlen($phone_numbers);
+  $formated_phone_numbers = '';
+  if ($char_size_phone_numbers == 12) {
+    $country_code = substr($phone_numbers, -12, 2);
+    $area_code = substr($phone_numbers, -10, 2);
+    $first_four_numbers = substr($phone_numbers, -8, 4);
+    $last_four_numbers = substr($phone_numbers, -4, 4);
+    $formated_phone_numbers = '('.$area_code.') '.$first_four_numbers.'-'.$last_four_numbers;
+  }
+  return  $formated_phone_numbers;
+}

@@ -1,1 +1,1 @@
-<a class="al-whatsapp-float" target='_blank' href="https://wa.me/<?php echo get_theme_mod('set_cell'); ?>"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - (61) 99685-3227"></i></a>
+<a class="al-whatsapp-float" target='_blank' href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('set_cell'); ?>&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - <?php echo get_theme_mod('set_cell'); ?>"></i></a>
