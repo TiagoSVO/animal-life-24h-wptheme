@@ -1,1 +1,1 @@
-<a class="al-whatsapp-float" target='_blank' href="https://api.whatsapp.com/send?phone=<?php echo get_theme_mod('set_cell'); ?>&text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - <?php echo get_theme_mod('set_cell'); ?>"></i></a>
+<a class="al-whatsapp-float" target='_blank' href="https://s.tintim.app/whatsapp/32dd15b1-347a-442d-b8e4-21f5e73f079e/b794a52c-e00d-44eb-a0d3-afd3c0faf003"><i class="bi bi-whatsapp" role="img" aria-label="Whatsapp - <?php echo get_theme_mod('set_cell'); ?>"></i></a>
